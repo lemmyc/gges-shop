@@ -153,19 +153,19 @@
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex w-100 ms-xl-5">
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" aria-current="page" href="#">
+              <a class="nav-link text-light font-20" aria-current="page" href="#">
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="#">
+              <a class="nav-link text-light font-20" href="#">
                 <i class="fa-solid fa-tags"></i>
                 Khuyến mãi
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light font-20" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
@@ -194,7 +194,7 @@
               </form>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light font-20" href="#" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -205,43 +205,65 @@
     </nav>
   </header>
 
-  <main class="container-fluid main-container p-0">
+  <main class="container-fluid main-container p-0 mt-0">
     <div class="featured">
-    </div>
-
-    <div class="promotion">
-      <div class="container-fluid w-100 promotion-container-1">
-        <div class="grid-container-1">
-          <div class="grid-item grid-space"></div>
-          <div class="grid-item promotion-title">
-            <p>
-              KHÔNG DÂY. KHÔNG GIỚI HẠN.
-            </p>
-          </div>
-          <div class="grid-item promotion-desc">
-            <strong>
-              THIẾT BỊ CHƠI GAME KHÔNG DÂY BÁN CHẠY NHẤT THẾ GIỚI SỬ DỤNG CÔNG NGHỆ LIGHTSPEED®
-            </strong>
-          </div>
-          <div class="grid-item purchase-btn">
-            <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
-          </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 h-100" data-bs-ride="carousel">
+        <div class="carousel-indicators d-none">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-      </div>
-      <div class="container-fluid w-100 promotion-container-2">
-        <div class="grid-container-2">
-          <div class="grid-item promotion-logo">
-            <img src="https://resource.logitechg.com/w_385,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/homepage/pro-series-logo.png?v=1" alt="pro-series" width="250px" height="250px">
+
+        <div class="carousel-inner video-wrapper">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="container-fluid row p-0 m-0">
+              <video loop autoplay class="featured-video p-0 m-0">
+                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="featured-content">
+              <p>CHƠI THEO CÁCH CỦA BẠN</p>
+              <a href="" class="featured-content-href">khám phá ngay</a>
+            </div>
           </div>
-          <div class="grid-item promotion-details">
-            <div class="details-wrapper">
-              <h1 style="margin-bottom:0">CẢM NHẬN CHIẾN THẮNG</h1>
-              <p>Trải nghiệm Gaming được tối ưu hóa bởi các chuyên gia e-sport hàng đầu thế giới</p>
-              <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="container-fluid row p-0 m-0">
+              <video loop autoplay class="featured-video p-0 m-0">
+                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="featured-content">
+              <p>CHƠI KHÔNG NGHỈ</p>
+              <a href="" class="featured-content-href">khám phá ngay</a>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="container-fluid row p-0 m-0">
+              <video loop autoplay class="featured-video p-0 m-0">
+                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="featured-content">
+              <p>CHƠI NGAY BÂY GIỜ</p>
+              <a href="" class="featured-content-href">khám phá ngay</a>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
     </div>
 
     <div class="shop-content">
@@ -315,6 +337,41 @@
       </div>
     </div>
 
+    <div class="promotion">
+      <div class="container-fluid w-100 promotion-container-1">
+        <div class="grid-container-1">
+          <div class="grid-item grid-space"></div>
+          <div class="grid-item promotion-title">
+            <p>
+              KHÔNG DÂY. KHÔNG GIỚI HẠN.
+            </p>
+          </div>
+          <div class="grid-item promotion-desc">
+            <strong>
+              THIẾT BỊ CHƠI GAME KHÔNG DÂY BÁN CHẠY NHẤT THẾ GIỚI SỬ DỤNG CÔNG NGHỆ LIGHTSPEED®
+            </strong>
+          </div>
+          <div class="grid-item purchase-btn">
+            <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid w-100 promotion-container-2">
+        <div class="grid-container-2">
+          <div class="grid-item promotion-logo">
+            <img src="https://resource.logitechg.com/w_385,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/homepage/pro-series-logo.png?v=1" alt="pro-series" width="250px" height="250px">
+          </div>
+          <div class="grid-item promotion-details">
+            <div class="details-wrapper">
+              <h1 style="margin-bottom:0">CẢM NHẬN CHIẾN THẮNG</h1>
+              <p>Trải nghiệm Gaming được tối ưu hóa bởi các chuyên gia e-sport hàng đầu thế giới</p>
+              <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="hot-sales">
 
     </div>
@@ -323,9 +380,8 @@
 
     </div>
 
-    <div class="customer-feedback mt-5 container-fluid" style="background-color: lightgray ;">
+    <div class="customer-feedback mt-5 container-fluid overflow-hidden" style="background-color: lightgray ;">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -392,9 +448,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-
-
     </div>
   </main>
 
