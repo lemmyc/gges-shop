@@ -17,39 +17,169 @@
 </head>
 <body>
     <header class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">GGES Shop</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+          <!-- FOR XS SM DISPLAY -->
+            <div class="container-fluid d-md-none">
+              <a class="navbar-brand flex-grow-1" href="#"><strong>GGES Shop</strong></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                    <a class="nav-link text-light text-start" aria-current="page" href="#">
+                      <i class="fa-solid fa-bell"></i>
+                      Thông báo
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link text-light text-start" href="#">
+                      <i class="fa-solid fa-tags"></i>
+                      Khuyến mãi
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown flex-grow-1">
+                    <a class="nav-link dropdown-toggle text-light text-start" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
+                      Đăng nhập
+                    </a>
+                    <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                      class="dropdown-menu dropdown-menu-end login-menu">
+                      <div class="mb-3">
+                        <input type="email" name="email" class="form-control" id="inputEmail1"
+                          placeholder="Tên người dùng" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Mật khẩu" id="inputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="inputCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                      </div>
+                      <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                      <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng ký ngay</a>
+                      </div>
+                      <div class="form-text text-dark">
+                        <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                      </div>
+                    </form>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light text-start" href="#" tabindex="-1" aria-disabled="true">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Giỏ hàng
+                    </a>
                   </li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex flex-grow-1">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-secondary" type="submit">Search</button>
                 </form>
+              </div>
+            </div>
+          <!-- FOR >MD DISPLAY -->
+            <div class="container-fluid d-none d-md-flex ms-3 me-3">
+              <a class="navbar-brand flex-grow-1" href="#"><strong>GGES Shop</strong></a>
+              <form class="d-flex flex-grow-1">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+              </form>
+              <div class="navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                <ul class="navbar-nav d-lg-none flex-row">
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" aria-current="page" href="#">
+                      <i class="fa-solid fa-bell"></i>
+                      Thông báo
+                    </a>
+                  </li>
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" href="#">
+                      <i class="fa-solid fa-tags"></i>
+                      Khuyến mãi
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown flex-grow-1">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
+                      Đăng nhập
+                    </a>
+                    <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                      class="dropdown-menu dropdown-menu-end login-menu pos-absolute">
+                      <div class="mb-3">
+                        <input type="email" name="email" class="form-control" id="inputEmail2"
+                          placeholder="Tên người dùng" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Mật khẩu" id="inputPassword2">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="inputCheck2">
+                        <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                      </div>
+                      <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                      <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng ký ngay</a>
+                      </div>
+                      <div class="form-text text-dark">
+                        <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                      </div>
+                    </form>
+                  </li>
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Giỏ hàng
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex w-100 ms-xl-5">
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" aria-current="page" href="#">
+                      <i class="fa-solid fa-bell"></i>
+                      Thông báo
+                    </a>
+                  </li>
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" href="#">
+                      <i class="fa-solid fa-tags"></i>
+                      Khuyến mãi
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown flex-grow-1">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
+                      Đăng nhập
+                    </a>
+                    <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                      class="dropdown-menu dropdown-menu-end login-menu">
+                      <div class="mb-3">
+                        <input type="email" name="email" class="form-control" id="inputEmail3"
+                          placeholder="Tên người dùng" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Mật khẩu" id="inputPassword3">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="inputRemember3">
+                        <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                      </div>
+                      <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                      <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng ký ngay</a>
+                      </div>
+                      <div class="form-text text-dark">
+                        <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                      </div>
+                    </form>
+                  </li>
+                  <li class="nav-item flex-grow-1">
+                    <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Giỏ hàng
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -70,6 +200,7 @@
         <div class="for-you">
 
         </div>
+        
     </main>
     <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
