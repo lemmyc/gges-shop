@@ -9,7 +9,7 @@
 .main-container{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .nav-link{
     text-align: center;
@@ -25,6 +25,95 @@
 .navbar-brand{
     font-size: 32px!important;
 }
+
+/* CAROUSEL related things (remove colors after testing) */
+.shop-content {
+    background-color: red;
+    height: 600px;
+    margin-top: 80px;
+}
+.items-container {
+    min-height: 500px;
+    background-color: antiquewhite;
+    padding-top: 80px;
+}
+.items-content {
+    display: flex;
+    flex-grow: 1;
+    background-color: aqua;
+}
+.items-title {
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-container {
+    background-color: azure;
+}
+
+
+.c-items {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+    color: white;
+}
+.items-label {
+    position: absolute;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 100; */
+}
+.items-img {
+    /* position: absolute; */
+    width: 100%;
+    height: 250px;
+    /* height: auto; */
+    top: 0;
+    left: 0;
+    border: 1px solid gray;
+    background-color: rgb(63, 63, 63);
+    object-fit: cover;
+    transition: .2s ease-in-out;
+}
+.c-items:hover .items-img{
+    filter: brightness(.7);
+}
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slick-arrow:not(.prev-btn):not(.next-btn) {
+    background-color: #00B8FC;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /* text-indent: -9999px; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slick-dots li button::before {
+    /* color: #00B8FC!important; */
+    font-size: 10px!important;
+}
+/* .slick-dots li.slick-active button:before {
+    color: #00B8FC;
+} */
 
 .promotion {
     background: black url('https://zedligaming.com/wp-content/uploads/2020/08/20617037_10155505657874871_2495346694590449553_o-1.jpg') center no-repeat;
@@ -56,4 +145,8 @@
 .purchase-btn {
     margin-top: 50px;
     justify-self: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 004e3a47d314bce5e6cd7f4d433c7e9499223f57
