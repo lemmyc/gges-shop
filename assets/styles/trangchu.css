@@ -9,7 +9,7 @@
 .main-container{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .nav-link{
     text-align: center;
@@ -25,3 +25,87 @@
 .navbar-brand{
     font-size: 32px!important;
 }
+
+/* CAROUSEL related things (remove colors after testing) */
+.shop-content {
+    background-color: red;
+    height: 700px;
+    margin-top: 80px;
+}
+.items-container {
+    min-height: 514px;
+    background-color: antiquewhite;
+    padding-top: 80px;
+}
+.items-content {
+    display: flex;
+    flex-grow: 1;
+    background-color: aqua;
+}
+.items-title {
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-container {
+    background-color: azure;
+}
+
+
+.c-items {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+    color: white;
+}
+.items-label {
+    position: absolute;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.items-img {
+    /* position: absolute; */
+    width: 100%;
+    height: 250px;
+    /* height: auto; */
+    top: 0;
+    left: 0;
+    border: 1px solid gray;
+    background-color: rgb(63, 63, 63);
+    object-fit: cover;
+}
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slick-arrow:not(.prev-btn):not(.next-btn) {
+    background-color: #00B8FC;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /* text-indent: -9999px; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slick-dots li button::before {
+    /* color: #00B8FC!important; */
+    font-size: 10px!important;
+}
+/* .slick-dots li.slick-active button:before {
+    color: #00B8FC;
+} */

@@ -13,6 +13,14 @@
 
     <link rel="stylesheet" href="./assets/styles/trangchu.css">
 
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- jQuery for slick carousel addon -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="./assets/frameworks/slick/script.js" defer></script>
+
     <title>GGES Shop</title>
 </head>
 <body>
@@ -184,7 +192,7 @@
             </div>
           </nav>
     </header>
-    <main class="container main-container border border-gray rounded">
+    <main class="container-fluid main-container border border-gray rounded">
         <div class="featured">
           <h1>Đây là header của bin</h1>
           <h1>Đây là header của BĐ</h1>
@@ -193,7 +201,74 @@
 
         </div>
         <div class="shop-content">
-
+          <div class="container p-0 items-container">
+            <div class="container pb-5 items-content">
+              <div class="items-title">
+                <h1 class="mb-4">THIẾT BỊ CHƠI GAME TIÊN TIẾN</h1>
+                <p>Chơi ở phong độ đỉnh cao của bạn với thiết bị chơi game hiệu suất từ GGES.</p>
+              </div>
+            </div>
+            <div class="container carousel-container">
+              <!-- <div class="carousel-items">
+                <div class="c-items">
+                  <h6 class="title-items">Item 1</h6>
+                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                  <a href="#" class="overlay-link"></a>
+                </div>
+                <div class="c-items">
+                  <h6 class="title-items">Item 1</h6>
+                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                  <a href="#" class="overlay-link"></a>
+                </div>
+              </div> -->
+              <section id="slideshow">
+                <!--data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'-->
+                <div class="slick carousel-items">
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 1</h4>
+                    <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 2</h4>
+                    <img src="./assets/images/carousel-images/keyboards.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 3</h4>
+                    <img src="./assets/images/carousel-images/mouse.png" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 4</h4>
+                    <img src="./assets/images/carousel-images/controller.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 5</h4>
+                    <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 6</h4>
+                    <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 7</h4>
+                    <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                  <div class="c-items">
+                    <h4 class="items-label">TEST 8</h4>
+                    <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            
+          </div>
         </div>
         <div class="hot-sales">
 
