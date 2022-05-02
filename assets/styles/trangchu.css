@@ -3,3 +3,51 @@
     margin-bottom: 1rem;
     height: 100vh;
 }
+.shop-content {
+    background-color: red;
+    height: 639px;
+    margin-top: 80px;
+}
+.items-container {
+    min-height: 514px;
+    background-color: antiquewhite;
+    padding-top: 80px;
+}
+.items-content {
+    display: flex;
+    flex-grow: 1;
+    background-color: aqua;
+}
+.items-title {
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-container {
+    background-color: azure;
+}
+
+.title-items {
+    padding: 10px 10px;
+}
+.c-items {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.items-img {
+    /* position: absolute; */
+    width: 95%;
+    height: 302px;
+    top: 0;
+    left: 0;
+    border: 1px solid gray;
+    background-color: rgb(63, 63, 63);
+    object-fit: contain;
+}
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

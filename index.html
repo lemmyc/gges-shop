@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="./assets/frameworks/bootstrap-5.1.3/css/bootstrap.min.css">
     <script src="./assets/frameworks/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- slick addon -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/frameworks/slick/slick-theme.css"/> -->
+
+    <!-- <script src="./assets/frameworks/slick/script.js" defer></script> -->
+
     <link rel="stylesheet" href="./assets/styles/trangchu.css">
 
     <title>GGES Shop</title>
@@ -56,13 +66,49 @@
     </header>
     <main class="container main-container border border-gray rounded">
         <div class="featured">
-          <h1>test</h1>
+          
         </div>
         <div class="promotion">
 
         </div>
+        <!-- carousel test -->
         <div class="shop-content">
-
+          <div class="container p-0 items-container">
+            <div class="container pb-5 items-content">
+              <div class="items-title">
+                <h1 class="mb-4">THIẾT BỊ CHƠI GAME TIÊN TIẾN</h1>
+                <p>Chơi ở phong độ đỉnh cao của bạn với thiết bị chơi game hiệu suất từ GGES.</p>
+              </div>
+            </div>
+            <div class="container carousel-container pt-5">
+              <!-- <div class="carousel-items">
+                <div class="c-items">
+                  <h6 class="title-items">Item 1</h6>
+                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                  <a href="#" class="overlay-link"></a>
+                </div>
+                <div class="c-items">
+                  <h6 class="title-items">Item 1</h6>
+                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
+                  <a href="#" class="overlay-link"></a>
+                </div>
+              </div> -->
+              <section id="slideshow">
+                <!--data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'-->
+                <div class="slick" >
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/keyboards.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/mouse.png" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                  <div><img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img"></div>
+                </div>
+              </section>
+            </div>
+            
+          </div>
         </div>
         <div class="hot-sales">
 
@@ -233,7 +279,52 @@
           <a class="text-white" href="#">GGES Shop</a>
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
     
+    <!-- jQuery for slick carousel addon -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/frameworks/slick/slick.min.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(() => {
+        //$('.carousel-items').slick();
+        $('#slideshow .slick').slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            // {
+            //   breakpoint: 1024,
+            //   settings: {
+            //     slidesToShow: 3,
+            //     slidesToScroll: 3,
+            //     infinite: true,
+            //     dots: true
+            //   }
+            // },
+            {
+              breakpoint: 1020,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 720,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
 </body>
 </html>
