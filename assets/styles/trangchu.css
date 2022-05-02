@@ -115,15 +115,26 @@
     color: #00B8FC;
 } */
 
-.promotion {
+.promotion-container-1{
     background: black url('https://zedligaming.com/wp-content/uploads/2020/08/20617037_10155505657874871_2495346694590449553_o-1.jpg') center no-repeat;
-    height: 500px;
+    height: 75vh;
 }
 
-.grid-container {
+.promotion-container-2{
+    background: black url('https://sudospaces.com/eshop/2021/07/5-tai-nghe-choi-game-logitech-g-pro-gen-2.png') center no-repeat;
+    height: 65vh;
+}
+
+.grid-container-1{
     display: grid;
     grid-template-rows: 50px;
     grid-auto-rows: minmax(50px, auto);
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 5fr 1.5fr 1fr;
+    grid-template-rows: 65vh;
 }
 
 .promotion-title {
@@ -145,8 +156,17 @@
 .purchase-btn {
     margin-top: 50px;
     justify-self: center;
-<<<<<<< HEAD
 }
-=======
+
+.promotion-logo{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
->>>>>>> 004e3a47d314bce5e6cd7f4d433c7e9499223f57
+
+.promotion-details{
+    color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: left;
+}
