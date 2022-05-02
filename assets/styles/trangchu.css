@@ -29,11 +29,11 @@
 /* CAROUSEL related things (remove colors after testing) */
 .shop-content {
     background-color: red;
-    height: 700px;
+    height: 600px;
     margin-top: 80px;
 }
 .items-container {
-    min-height: 514px;
+    min-height: 500px;
     background-color: antiquewhite;
     padding-top: 80px;
 }
@@ -68,6 +68,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    /* z-index: 100; */
 }
 .items-img {
     /* position: absolute; */
@@ -79,6 +80,10 @@
     border: 1px solid gray;
     background-color: rgb(63, 63, 63);
     object-fit: cover;
+    transition: .2s ease-in-out;
+}
+.c-items:hover .items-img{
+    filter: brightness(.7);
 }
 .overlay-link {
     position: absolute;
@@ -109,3 +114,35 @@
 /* .slick-dots li.slick-active button:before {
     color: #00B8FC;
 } */
+
+.promotion {
+    background: black url('https://zedligaming.com/wp-content/uploads/2020/08/20617037_10155505657874871_2495346694590449553_o-1.jpg') center no-repeat;
+    height: 500px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.promotion-title {
+    font-size: 60px;
+    font-weight: bold;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.promotion-desc {
+    width: 45%;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.purchase-btn {
+    margin-top: 50px;
+    justify-self: center;
+}
