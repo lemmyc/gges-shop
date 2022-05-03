@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="./assets/frameworks/bootstrap-5.1.3/css/bootstrap.min.css">
   <script src="./assets/frameworks/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" href="./assets/styles/trangchu.css">
+  <link rel="stylesheet" href="./assets/styles/cart.css">
   <link rel="stylesheet" href="style.css">
+
+
   <script src="./assets/scripts/main.js" defer></script>
+  <script src="./assets/scripts/cart.js" defer></script>
 
 
   <!-- slick css -->
@@ -83,7 +86,7 @@
               </form>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light text-start" href="cart.html" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light text-start" href="#" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -146,7 +149,7 @@
               </form>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="cart.html" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -195,7 +198,7 @@
               </form>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="cart.html" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -206,254 +209,16 @@
     </nav>
   </header>
 
-  <main class="container-fluid main-container p-0 mt-0">
-    <div class="featured">
-      <div id="featured-carousel" class="carousel carousel-dark slide w-100 h-100 overflow-hidden" data-bs-ride="carousel">
-        <div class="carousel-indicators d-none">
-          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner w-100 h-100">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <div class="container-fluid row p-0 m-0">
-              <video loop autoplay="true" muted="muted" class="featured-video p-0 m-0">
-                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="featured-content">
-              <p>CHƠI THEO CÁCH CỦA BẠN</p>
-              <a href="" class="featured-content-href">khám phá ngay</a>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="5000">
-            <div class="container-fluid row p-0 m-0">
-              <video loop autoplay="true" muted="muted" class="featured-video p-0 m-0">
-                <source src="./assets/videos/g435-gaming-headset-hero-video.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="featured-content">
-              <p>CHƠI KHÔNG NGHỈ</p>
-              <a href="" class="featured-content-href">TRẢI NGHIỆM VÀ TẬN HƯỞNG</a>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="5000">
-            <div class="container-fluid row p-0 m-0">
-              <img class="p-0 m-0" style="max-width: none; max-height: none;" src="./assets/images/featured-carousel/intel_inside.jpg" alt="intel inside" srcset="">
-            </div>
-            <div class="featured-content">
-              <p >CHƠI NGAY BÂY GIỜ</p>
-              <a href="" class="featured-content-href">thử thách giới hạn</a>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev h-100" type="button" data-bs-target="#featured-carousel"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" style="transform: translateX(1rem)" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next h-100" type="button" data-bs-target="#featured-carousel"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" style="transform: translateX(-1rem)" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <main class="container">
+      <div class="buy-list">
+          <table>
+              <th>
+                  
+              </th>
+          </table>
       </div>
-
-    </div>
-
-    <div class="shop-content">
-      <div class="container p-0 items-container">
-        <div class="container pb-5 items-content">
-          <div class="items-title">
-            <h1 class="mb-4">THIẾT BỊ CHƠI GAME TIÊN TIẾN</h1>
-            <p>Chơi ở phong độ đỉnh cao của bạn với thiết bị chơi game hiệu suất từ các đối tác của GGES.</p>
-          </div>
-        </div>
-        <div class="container carousel-container">
-          <!-- <div class="carousel-items">
-                <div class="c-items">
-                  <h6 class="title-items">Item 1</h6>
-                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                  <a href="#" class="overlay-link"></a>
-                </div>
-                <div class="c-items">
-                  <h6 class="title-items">Item 1</h6>
-                  <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                  <a href="#" class="overlay-link"></a>
-                </div>
-              </div> -->
-          <section id="slideshow">
-            <!--data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'-->
-            <div class="slick carousel-items">
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 1</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/keyboards.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 2</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/mouse.png" alt="" class="items-img">
-                <h4 class="items-label">TEST 3</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/controller.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 4</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 5</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 6</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 7</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-              <div class="c-items">
-                <img src="./assets/images/carousel-images/earphones.webp" alt="" class="items-img">
-                <h4 class="items-label">TEST 8</h4>
-                <a href="#" class="overlay-link"></a>
-              </div>
-            </div>
-          </section>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="promotion">
-      <div class="container-fluid w-100 promotion-container-1">
-        <div class="grid-container-1">
-          <div class="grid-item grid-space"></div>
-          <div class="grid-item promotion-title">
-            <p>
-              KHÔNG DÂY. KHÔNG GIỚI HẠN.
-            </p>
-          </div>
-          <div class="grid-item promotion-desc">
-            <strong>
-              THIẾT BỊ CHƠI GAME KHÔNG DÂY BÁN CHẠY NHẤT THẾ GIỚI SỬ DỤNG CÔNG NGHỆ LIGHTSPEED®
-            </strong>
-          </div>
-          <div class="grid-item purchase-btn">
-            <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid w-100 promotion-container-2">
-        <div class="grid-container-2">
-          <div class="grid-item promotion-logo">
-            <img
-              src="https://resource.logitechg.com/w_385,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/homepage/pro-series-logo.png?v=1"
-              alt="pro-series" width="250px" height="250px">
-          </div>
-          <div class="grid-item promotion-details">
-            <div class="details-wrapper">
-              <h1 style="margin-bottom:0">CẢM NHẬN CHIẾN THẮNG</h1>
-              <p>Trải nghiệm Gaming được tối ưu hóa bởi các chuyên gia e-sport hàng đầu thế giới</p>
-              <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hot-sales">
-
-    </div>
-
-    <div class="for-you">
-
-    </div>
-
-    <div class="customer-feedback mt-5 container-fluid overflow-hidden">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active mt-5" data-bs-interval="10000">
-            <div class="container-fluid row flex-nowrap feedback-banner">
-              <div class="col-lg-8 align-self-center feedback-content">
-                <blockquote>
-                  <i class="fa-solid fa-quote-right open-blockquote-icon"></i>
-                  <p>Sản phẩm chính hãng nguyên seal, bảo hành 2 năm. Giao hàng khá nhanh. Được tặng thêm milo. Uy tín
-                    cho 5 sao.</p>
-                  <small>- Lê Gia Khôi</small>
-                </blockquote>
-              </div>
-
-              <div class="col-lg-4 align-self-center feedback-img">
-                <img src="./assets/images/cus_feedback-images/khoi_le.jpg" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item mt-5" data-bs-interval="10000">
-            <div class="container-fluid row flex-nowrap feedback-banner">
-              <div class="col-lg-8 align-self-center feedback-content">
-                <blockquote>
-                  <i class="fa-solid fa-quote-right open-blockquote-icon"></i>
-                  <p>Shop đóng gói cẩn thận, hộp vẫn còn seal, mê shop này từ lâu, rất may được mua hàng ở shop ngay mùa
-                    sale!</p>
-                  <small>- Đăng Lê</small>
-                </blockquote>
-              </div>
-
-              <div class="col-lg-4 align-self-center feedback-img">
-                <img src="./assets/images/cus_feedback-images/dang_le.jpg" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item mt-5" data-bs-interval="10000">
-            <div class="container-fluid row flex-nowrap feedback-banner">
-              <div class="col-lg-8 align-self-center feedback-content">
-                <blockquote>
-                  <i class="fa-solid fa-quote-right open-blockquote-icon"></i>
-                  <p>Sản phẩm giao đúng như miêu tả, rất tuyệt vời. Tôi rất yêu thích shop này!</p>
-                  <small>- Khang Phạm</small>
-                </blockquote>
-              </div>
-
-              <div class="col-lg-4 align-self-center feedback-img">
-                <img src="./assets/images/cus_feedback-images/khang_pham.jpg" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
   </main>
+
   <footer class="text-center text-dark">
     <!-- Grid container -->
     <div class="container p-4">

@@ -97,13 +97,12 @@
         height: 630px;
     }
 
-    .fa-solid{
+    .open-blockquote-icon{
         font-size: 60px;
     }
 
     .featured-content>p{
-        font
-        -size: 2rem;
+        font-size: 2rem;
     }
     .featured-content>a{
         font-size: 1rem;
@@ -201,7 +200,7 @@
         height: 430px;
     }
 
-    .fa-solid{
+    .open-blockquote-icon{
         font-size: 60px;
     }
 }
@@ -291,12 +290,7 @@
         height: 500px;
     }
 
-    .fa-solid{
+    .open-blockquote-icon{
         font-size: 100px;
     }
 }
-
-/* #carousel-inner{
-    max-width: 100%;
-    max-height: 100%;
-} */
