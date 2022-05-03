@@ -57,13 +57,22 @@
     background-color: rgba(16, 154, 203, 0.99);
 
 }
+.navbar{
+    background-color: #2f3132!important;
+}
+.navbar-brand{
+    color: white!important;
+}
 .nav-link{
     text-align: center;
+    color: white!important;
 }
-.nav-link:hover{
+/* .nav-link:hover{
     color: #333!important;
+} */
+.navbar-toggler-icon{
+    color: white!important;
 }
-
 .login-menu{
     min-width: 20rem;
     padding: 1rem;
