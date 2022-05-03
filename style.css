@@ -1,15 +1,30 @@
 /* Man hinh nho */
-@media only screen and (max-width: 992px) {
-    .feedback-banner {
+@media only screen and (max-width: 995px) {
+    .feedback-banner{
+        background-color:lightyellow;
         flex-direction: column;
     }
 
-    .feedback-img {
-        order: 1;
-        text-align: center;
+    .feedback-banner{
+        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        height: 630px;
     }
 
     .feedback-content {
+        text-align: justify;
+        margin-top: 150px;
+        margin-bottom: 5px;
+        margin-left: 40px;
+        margin-right: 5px;
+        /* font-size: 35px; */
+        /* font-weight: bold; */
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-bottom: 5px double lightgray;
+        border-right: 5px solid lightgray;
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 5%;
         order: 2;
         text-align: center;
         font-size: 25px;
@@ -18,132 +33,55 @@
 
     .feedback-content small{
         font-size: 15px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: gray;
+        margin-left: 40px;
+        margin-top: 20px;
     }
 
-    .feedback-img img{
-        max-width: 200px;
-        max-height: 200px;
+    .feedback-content p {
+        margin-left: 60px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .feedback-img{
+        text-align: center;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        margin-top: 10px;
+        object-fit: contain;
+        /* flex: 1; */
+        margin-bottom: -100px;
+        order: 1;
+        text-align: center;
+    }
+
+    .feedback-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
 
     .carousel-control-prev{
         position: absolute;
         left: -30px;
+        top: -300px;
     }
     
     .carousel-control-next{
         position: absolute;
         right: -30px;
+        top: -300px;
     }
 
-    #carouselExampleDark{
-        height: 480px;
-    }
     .carousel-control-prev-icon,
     .carousel-control-next-icon{
         position: relative;
-    }
-    .featured-content>p{
-        font-size: 2rem;
-    }
-    .featured-content>a{
-        font-size: 1rem;
-    }
-    .slick-prev{
-        transform: translateX(1rem)!important;
-    }.slick-next{
-        transform: translateX(-1rem)!important;
-    }
-}
-
-/* Man hinh vua 993->1200 */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-    .feedback-content {
-        text-align: justify;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .feedback-content small{
-        font-size: 15px;
-        color: gray;
-    }
-
-    .feedback-img{
-        text-align: center;
-    }
-
-    .feedback-img img {
-        max-width: 200px;
-        max-height: 200px;
-        border-radius: 50%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .carousel-control-prev{
-        position: absolute;
-        left: -70px;
-    }
-    
-    .carousel-control-next{
-        position: absolute;
-        right: -70px;
-    }
-
-    #carouselExampleDark{
-        height: 300px;
-    }
-}
-
-/* Man hinh lon */
-@media only screen and (min-width: 1201px) {
-    .feedback-content {
-        text-align: justify;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 60px;
-        margin-right: 10px;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .feedback-content small{
-        font-size: 20px;
-        color: gray;
-    }
-
-    .feedback-img{
-        text-align: center;
-        max-width: 100%;
-        max-height: 100%;
-        /* width: 300px; */
-        object-fit: contain;
-    }
-
-    .feedback-img img {
-        max-width: 100%;
-        max-height: 100%;
-        padding: 0;
-        border-radius: 30%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .carousel-control-prev{
-        position: absolute;
-        left: -90px;
-    }
-    
-    .carousel-control-next{
-        position: absolute;
-        right: -90px;
     }
 
     .carousel-indicators{
@@ -152,11 +90,209 @@
     }
 
     .customer-feedback{
-        height: 400px;
+        height: 630px;
     }
 
     #carouselExampleDark{
+        height: 630px;
+    }
+
+    .fa-solid{
+        font-size: 60px;
+    }
+
+    .featured-content>p{
+        font
+        -size: 2rem;
+    }
+    .featured-content>a{
+        font-size: 1rem;
+    }
+
+    .slick-prev{
+        transform: translateX(1rem)!important;
+    }
+    
+    .slick-next{
+        transform: translateX(-1rem)!important;
+    }
+}
+
+/* Man hinh vua 996->1500 */
+@media only screen and (min-width: 996px) and (max-width: 1500px) {
+    .feedback-banner{
+        background-color:lightyellow;
+    }
+
+    .feedback-banner{
+        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        height: 430px;
+    }
+
+    .feedback-content {
+        text-align: justify;
+        margin-top: -50px;
+        margin-bottom: 5px;
+        margin-left: 40px;
+        margin-right: 5px;
+        /* font-size: 35px; */
+        /* font-weight: bold; */
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-bottom: 5px double lightgray;
+        border-right: 5px solid lightgray;
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 5%;
+    }
+
+    .feedback-content small{
+        font-size: 15px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: gray;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .feedback-content p {
+        margin-left: 60px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .feedback-img{
+        text-align: center;
+        width: 400px;
         height: 400px;
+        border-radius: 50%;
+        object-fit: contain;
+        flex: 1;
+        margin-bottom: -100px;
+    }
+
+    .feedback-img img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+    }
+
+    .carousel-control-prev{
+        position: absolute;
+        left: -60px;
+    }
+    
+    .carousel-control-next{
+        position: absolute;
+        right: -60px;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: -15px;
+    }
+
+    .customer-feedback{
+        height: 430px;
+    }
+
+    #carouselExampleDark{
+        height: 430px;
+    }
+
+    .fa-solid{
+        font-size: 60px;
+    }
+}
+
+/* Man hinh lon >=1500px */
+@media only screen and (min-width: 1500px) {
+    .feedback-banner{
+        background-color:lightyellow;
+    }
+
+    .feedback-banner{
+        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        height: 450px;
+    }
+
+    .feedback-content {
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        margin-right: 10px;
+        /* font-size: 35px; */
+        /* font-weight: bold; */
+        padding-right: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px double lightgray;
+        border-right: 5px solid lightgray;
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 5%;
+    }
+
+    .feedback-content small{
+        font-size: 25px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: gray;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .feedback-content p {
+        margin-left: 80px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 45px;
+    }
+
+    .feedback-img{
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: contain;
+        flex: 1;
+        margin-top: -40px;
+    }
+
+    .feedback-img img {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+    }
+
+    .carousel-control-prev{
+        position: absolute;
+        left: -90px;
+        top: 50px;
+    }
+    
+    .carousel-control-next{
+        position: absolute;
+        right: -90px;
+        top: 50px;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: -15px;
+    }
+
+    .customer-feedback{
+        height: 500px;
+    }
+
+    #carouselExampleDark{
+        height: 500px;
+    }
+
+    .fa-solid{
+        font-size: 100px;
     }
 }
 
