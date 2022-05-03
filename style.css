@@ -42,19 +42,20 @@
     #carouselExampleDark{
         height: 480px;
     }
-    /* .featured-content{
-        top: 50%;
-    } */
     .carousel-control-prev-icon,
     .carousel-control-next-icon{
         position: relative;
-        top: -20%;
     }
     .featured-content>p{
         font-size: 2rem;
     }
     .featured-content>a{
         font-size: 1rem;
+    }
+    .slick-prev{
+        transform: translateX(1rem)!important;
+    }.slick-next{
+        transform: translateX(-1rem)!important;
     }
 }
 

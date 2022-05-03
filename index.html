@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="./assets/styles/trangchu.css">
   <link rel="stylesheet" href="style.css">
+  <script src="./assets/scripts/main.js" defer></script>
 
 
   <!-- slick css -->
@@ -30,7 +31,7 @@
 
 <body>
   <header class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
       <!-- FOR XS SM DISPLAY -->
       <div class="container-fluid d-md-none">
         <a class="navbar-brand flex-grow-1" href="#"><strong>GGES Shop</strong></a>
@@ -207,20 +208,18 @@
 
   <main class="container-fluid main-container p-0 mt-0">
     <div class="featured">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 h-100" data-bs-ride="carousel">
+      <div id="featured-carousel" class="carousel carousel-dark slide w-100 h-100 overflow-hidden" data-bs-ride="carousel">
         <div class="carousel-indicators d-none">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
-        <div class="carousel-inner video-wrapper">
+        <div class="carousel-inner w-100 h-100">
           <div class="carousel-item active" data-bs-interval="5000">
             <div class="container-fluid row p-0 m-0">
-              <video loop autoplay class="featured-video p-0 m-0">
+              <video loop autoplay="true" muted="muted" class="featured-video p-0 m-0">
                 <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
               </video>
             </div>
@@ -232,34 +231,34 @@
 
           <div class="carousel-item" data-bs-interval="5000">
             <div class="container-fluid row p-0 m-0">
-              <video loop autoplay class="featured-video p-0 m-0">
-                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
+              <video loop autoplay="true" muted="muted" class="featured-video p-0 m-0">
+                <source src="./assets/videos/g435-gaming-headset-hero-video.mp4" type="video/mp4">
               </video>
             </div>
             <div class="featured-content">
               <p>CHƠI KHÔNG NGHỈ</p>
-              <a href="" class="featured-content-href">khám phá ngay</a>
+              <a href="" class="featured-content-href">TRẢI NGHIỆM VÀ TẬN HƯỞNG</a>
             </div>
           </div>
 
           <div class="carousel-item" data-bs-interval="5000">
             <div class="container-fluid row p-0 m-0">
-              <video loop autoplay class="featured-video p-0 m-0">
-                <source src="./assets/videos/lol-kda-hpb.mp4" type="video/mp4">
-              </video>
+              <img class="p-0 m-0" style="max-width: none; max-height: none;" src="./assets/images/featured-carousel/intel_inside.jpg" alt="intel inside" srcset="">
             </div>
             <div class="featured-content">
-              <p>CHƠI NGAY BÂY GIỜ</p>
-              <a href="" class="featured-content-href">khám phá ngay</a>
+              <p >CHƠI NGAY BÂY GIỜ</p>
+              <a href="" class="featured-content-href">thử thách giới hạn</a>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev h-100" type="button" data-bs-target="#featured-carousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" style="transform: translateX(1rem)" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next h-100" type="button" data-bs-target="#featured-carousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" style="transform: translateX(-1rem)" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -271,7 +270,7 @@
         <div class="container pb-5 items-content">
           <div class="items-title">
             <h1 class="mb-4">THIẾT BỊ CHƠI GAME TIÊN TIẾN</h1>
-            <p>Chơi ở phong độ đỉnh cao của bạn với thiết bị chơi game hiệu suất từ GGES.</p>
+            <p>Chơi ở phong độ đỉnh cao của bạn với thiết bị chơi game hiệu suất từ các đối tác của GGES.</p>
           </div>
         </div>
         <div class="container carousel-container">
@@ -359,7 +358,9 @@
       <div class="container-fluid w-100 promotion-container-2">
         <div class="grid-container-2">
           <div class="grid-item promotion-logo">
-            <img src="https://resource.logitechg.com/w_385,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/homepage/pro-series-logo.png?v=1" alt="pro-series" width="250px" height="250px">
+            <img
+              src="https://resource.logitechg.com/w_385,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/homepage/pro-series-logo.png?v=1"
+              alt="pro-series" width="250px" height="250px">
           </div>
           <div class="grid-item promotion-details">
             <div class="details-wrapper">
@@ -450,139 +451,80 @@
       </div>
     </div>
   </main>
-
-  <footer class="bg-dark text-center text-white">
+  <footer class="text-center text-dark">
     <!-- Grid container -->
     <div class="container p-4">
-      <!-- Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Mua sắm nhiều hơn với ưu đãi tại GGES</strong>
-              </p>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Email của bạn" />
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Đăng ký ngay
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
-
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-          eum harum corrupti dicta, aliquam sequi voluptate quas.
-        </p>
-      </section>
-      <!-- Section: Text -->
-
       <!-- Section: Links -->
-      <section class="">
+      <section class="mt-4 footer-link">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
             <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">GIỚI
+                    THIỆU</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">QUYỀN RIÊNG TƯ +
+                    BẢO
+                    MẬT</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">ĐIỀU KHOẢN SỬ
+                    DỤNG</span></a>
               </li>
             </ul>
           </div>
           <!--Grid column-->
-
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
             <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">LIÊN HỆ</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">CÀI ĐẶT
+                    COOKIE</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">TÍNH BỀN
+                    VỮNG</span></a>
               </li>
             </ul>
           </div>
           <!--Grid column-->
-
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
             <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">NGHỀ
+                    NGHIỆP</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">SƠ ĐỒ TRANG
+                    WEB</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">TÁI CHẾ</span></a>
               </li>
             </ul>
           </div>
           <!--Grid column-->
-
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
             <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">PHÒNG HỢP TÁC PHÁT
+                    TRIỂN</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">NHÀ ĐẦU
+                    TƯ</span></a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+              <li class="mb-2">
+                <a href="#!" class="text-decoration-none text-dark"><span class="footer-link-content">TÙY CHỌN
+                    EMAIL</span></a>
               </li>
             </ul>
           </div>
@@ -591,22 +533,55 @@
         <!--Grid row-->
       </section>
       <!-- Section: Links -->
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Youtube -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-youtube"></i></a>
-      </section>
-      <!-- Section: Social media -->
+      <div class=" mt-4 container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-11 footer-email">
+            <form action="">
+              <div class="row d-flex justify-content-left">
+                <div class="col-md-11 footer-email-form">
+                  <div class="form-outline form-white">
+                    <input type="email" id="form5Example21" class="form-control footer-email-form-content"
+                      placeholder="Email của bạn" />
+                  </div>
+                </div>
+                <div class="col-auto footer-email-btn">
+                  <button type="submit" class="btn btn-secondary footer-email-btn-content">
+                    <b>ĐĂNG KÝ</b>
+                  </button>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-left">
+                <input class="col-2 mt-3 form-check-input check-box" type="checkbox" value="">
+                <label class="col-9 mt-3 form-check-label check-info">
+                  Có, tôi muốn nhận email về sản phẩm, tin tức và nhiều hơn nữa từ GGES Shop
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="col-11 footer-social">
+            <div class="row footer-social-content">
+              <a class="col btn btn-floating facebook-btn pt-0" href="#!" role="button">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="col btn btn-floating twitter-btn pt-0" href="#!" role="button">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="col btn btn-floating instagram-btn pt-0" href="#!" role="button">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="col btn btn-floating youtube-btn pt-0" href="#!" role="button">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Grid container -->
-
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="#">GGES Shop</a>
+    <div class="text-center p-3 text-white" style="background-color: rgb(33,37,41);">
+      <b>© 2020 Copyright:</b>
+      <a class="text-primary" href="#"><b>GGES Shop</b></a>
     </div>
     <!-- Copyright -->
   </footer>

@@ -21,16 +21,13 @@
 }
 .featured{
     width: 100%;
-    height: calc(100vh - 74px);
+    max-height: calc(100vh - 58px);
     overflow: hidden;
     position: relative;
 }
-.video-wrapper{
-    transform: translateY(-30%)
-}
 .featured-content{
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -77,19 +74,16 @@
 
 /* CAROUSEL related things (remove colors after testing) */
 .shop-content {
-    background-color: red;
     height: 600px;
     margin-top: 80px;
 }
 .items-container {
     min-height: 500px;
-    background-color: antiquewhite;
     padding-top: 80px;
 }
 .items-content {
     display: flex;
     flex-grow: 1;
-    background-color: aqua;
 }
 .items-title {
     margin: 0 auto;
@@ -218,4 +212,97 @@
     align-self: center;
     justify-self: center;
     text-align: left;
+}
+footer {
+    background-color: rgb(244,244,244);
+}
+
+.footer-link {
+    text-align: left;
+}
+
+.footer-link-content:hover {
+    text-decoration: underline;
+}
+
+.footer-email-form {
+    padding: 0;
+}
+
+.footer-email-form-content {
+    font-size: 16px;
+    padding: 4px 8px;
+    
+}
+
+.footer-email-btn {
+    padding: 0;
+}
+
+.footer-email-btn-content {
+    background-color: rgb(33,37,41);
+    font-size: 16px;
+    padding: 4px 8px;
+    margin: 1rem 0;
+}
+
+.footer-email-btn-content:hover {
+    background-color: rgb(25, 135, 84);
+    color: white;
+}
+
+
+
+.footer-email {
+    flex: 0.8;
+}
+
+.footer-social {
+    flex: 1;
+}
+
+.check-box {
+    height: 30px;
+    border: rgb(105,113,114) 3px solid;
+}
+
+.check-info {
+    text-align: left;
+    font-weight: bold;
+}
+
+.facebook-btn {
+    font-size: 32px;
+    background-color: rgb(244,244,244);
+}
+
+.facebook-btn:hover {
+    color: rgb(59,89,152);
+}
+
+.twitter-btn {
+    font-size: 32px;
+    background-color: rgb(244,244,244);
+}
+
+.twitter-btn:hover {
+    color: rgb(29,161,242);
+}
+
+.instagram-btn {
+    font-size: 32px;
+    background-color: rgb(244,244,244);
+}
+
+.instagram-btn:hover {
+    color: rgb(226,48,108);
+}
+
+.youtube-btn {
+    font-size: 32px;
+    background-color: rgb(244,244,244);
+}
+
+.youtube-btn:hover {
+    color: rgb(230,0,0);
 }
