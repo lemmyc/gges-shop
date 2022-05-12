@@ -9,7 +9,9 @@
 .pos-absolute{
     position: absolute!important;
 }
-
+.darker-when-hover:hover{
+    opacity: .75;
+}
 .main-container{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -38,7 +40,7 @@
 }
 .featured-content>p{
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     padding: 1rem 1rem .5rem;
     text-align: center;
