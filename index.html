@@ -54,12 +54,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light text-start" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light text-start login-btn" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action="" name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Tên người dùng"
@@ -70,11 +70,11 @@
                     id="inputPassword1">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox" name="rememberMe" class="form-check-input" id="inputCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -117,12 +117,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light darker-when-hover login-btn" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action="" name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu pos-absolute">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail2" placeholder="Tên người dùng"
@@ -133,11 +133,11 @@
                     id="inputPassword2">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputCheck2">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox" name="rememberMe" class="form-check-input" id="inputCheck2">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -166,12 +166,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light darker-when-hover login-btn" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action=""  name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Tên người dùng"
@@ -182,11 +182,11 @@
                     id="inputPassword3">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputRemember3">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox"  name="rememberMe" class="form-check-input" id="inputRemember3">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -588,7 +588,8 @@
     </div>
     <!-- Copyright -->
   </footer>
-
+  <script src="./assets/scripts/login.js"></script>
+  <script src="./assets/scripts/logout.js"></script>
 </body>
 
 </html>
