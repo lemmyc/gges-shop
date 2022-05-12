@@ -13,6 +13,7 @@ $(document).ready(()=>{
 })
 function formValidate(){
     var isAllValid = 1;
+    let email;
     for(element of inputElements){
         switch(element.name){
             case 'email':
@@ -21,6 +22,7 @@ function formValidate(){
                     alert('Vui lòng nhập Email hợp lệ.');
                     isAllValid = 0;
                 }
+                email = element.value;
                 break;
             case 'pwd':
                 let pwReg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
@@ -46,6 +48,10 @@ function formValidate(){
                 }
         }
     }
+    if(JSON.parse(window.localStorage.getItem(email)) != null){
+        alert("Tên người dùng đã được đăng ký trước đó");
+        isAllValid = 0;
+    }
     return isAllValid;
 }
 function submitForm(){
@@ -63,5 +69,7 @@ function submitForm(){
                 data[elementName] = elementValue;
         }
     }
-    window.localStorage.setItem("user", JSON.stringify(data));
+    let userKey = data.email;
+    window.localStorage.setItem(userKey, JSON.stringify(data));
+    window.localStorage.setItem("currentUser", data.email);
 }
