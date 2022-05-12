@@ -68,13 +68,13 @@ main{
     width: 35%;
 }
 .h-prod-quant{
-    width: 12%;
+    width: 13%;
 }
 .h-prod-price{
-    width: 12%;
+    width: 13%;
 }
 .h-prod-total{
-    width: 15%;
+    width: 13%;
 }
 .d-prod-img img{
     width: 100%;
@@ -150,7 +150,15 @@ main{
     cursor: pointer;
     border-radius: 3px;
 }
-
+.inline-group {
+    width: 100%;
+    /* padding: 0 1rem; */
+    justify-content: center;
+}
+  
+.inline-group .form-control{
+    text-align: right;
+}
 
 footer {
     background-color: rgb(244,244,244);

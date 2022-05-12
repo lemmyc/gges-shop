@@ -30,12 +30,15 @@ for(var key in localDt){
                 <td class="d-prod-price">${price}</td>
                 <td class="d-prod-total">${total}</td>
                 <td class="d-prod-del">
+                <div class="input-group inline-group">
+                    <input class="form-control quantity flex-grow-0 w-50  p-0 mb-3 text-center" min="1" name="quantity" value="1" type="number">
+                </div>
                     <button class="d-prod-del-btn" data-code=${key} onclick="handleRemove('${index}', '${key}')">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </td>
             </tr>
-        `)
+            `)
     }
     index++;
 }
@@ -72,7 +75,8 @@ function getOrdFooter(){
         </tr>
         <tr>
             <td class="discount" colspan="6">
-                Chiết khấu (B) = ${discountRate} x A = ${convToVND(discount)}
+                Chiết khấu (B) = ${discountRate} x A = ${convToVND(discount)} 
+                <p class="mb-0" style="font-size: 16px"> <i>Đăng nhập tại GGES - Nhận ngay ưu đãi 10%</i></p>
             </td>
         </tr>
         <tr>
@@ -93,7 +97,7 @@ function convToVND(number){
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number)
 }
 function getDiscountRate(){
-    return 0.1;
+    return (JSON.parse(window.localStorage.getItem("isLogged")) ? 0.1 : 0)
 }
 function handleConfirmClick(){
     if(localStorage.length > 0){

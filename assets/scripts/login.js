@@ -4,7 +4,7 @@ $(document).ready(()=>{
     let isLogged = JSON.parse(window.localStorage.getItem("isLogged"));
     if(isLogged){
         let user = JSON.parse(window.localStorage.getItem(currentUser))
-        console.log(user)
+        // console.log(user)
         let loginBtns = document.querySelectorAll(".login-btn");
         for(let loginBtn of loginBtns){
             loginBtn.innerHTML = `Xin chào, <strong>${user.name}</strong>`
@@ -33,7 +33,7 @@ function handleRememberUser(){
     const rememberUserElements = document.querySelectorAll("[name='rememberMe']");
     const headerNavElement = document.querySelector("header nav");
     const emailInputElements = headerNavElement.querySelectorAll("[name='email']");
-    console.log(emailInputElements)
+    // console.log(emailInputElements)
     let isRememberUser = JSON.parse(window.localStorage.getItem('rememberUser'))
     for(let rememberUserElement of rememberUserElements){
         rememberUserElement.checked = isRememberUser;
@@ -57,7 +57,7 @@ function loginFormValidate(form){
     const emailInput =  form.querySelector("[name='email']").value;
     const passInput = form.querySelector("[name='password']").value;
     const rememberUser = form.querySelector("[name='rememberMe']").checked;
-    console.log(rememberUser)
+    // console.log(rememberUser)
     const user = JSON.parse(window.localStorage.getItem(emailInput));
     if (user == null) alert("Vui lòng kiểm tra lại Tên người dùng")
     if(emailInput !== user.email || passInput !== user.password)
@@ -67,6 +67,8 @@ function loginFormValidate(form){
         window.localStorage.setItem("currentUser", currentUser);
         window.localStorage.setItem("rememberUser", rememberUser);
         window.localStorage.setItem("isLogged", true);
-        window.open('index.html', "_self")
+        let currentPage = (window.location.href).split("/").pop();
+        if (currentPage == "dangky.html") currentPage = "index.html"
+        window.open(currentPage, "_self")
     }
 }
