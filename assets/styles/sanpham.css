@@ -208,13 +208,13 @@ img{
         margin-bottom: 5px;
     }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 900px){
     .product-items{
         grid-template-columns: repeat(2, 1fr);
     }
     .product{
         position: relative;
-        width: 400px;
+        width: 30%;
         height: 550px;
         margin-left: 12px;
         margin-right: 12px;
@@ -225,7 +225,7 @@ img{
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1100px){
     .product-items{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -238,13 +238,13 @@ img{
         height: 550px;
         margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .product-name{
+        font-size: 16px;
         line-height: 20px;
-        height: 40px;
+        max-height: 40px;
         overflow: hidden;
-        display: block;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -253,5 +253,6 @@ img{
         background: white;
         padding: 2rem;
         height: 200px;
+        overflow: hidden;
     }
 }
