@@ -15,6 +15,34 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+.darker-when-hover:hover{
+    opacity: .75;
+}
+
+.navbar{
+    background-color: #2f3132!important;
+}
+.navbar-brand{
+    color: white!important;
+}
+.nav-link{
+    text-align: center;
+    color: white!important;
+}
+/* .nav-link:hover{
+    color: #333!important;
+} */
+.navbar-toggler-icon{
+    color: white!important;
+}
+.login-menu{
+    min-width: 20rem;
+    padding: 1rem;
+}
+.navbar-brand{
+    font-size: 32px!important;
+}
+
 /* Utility stylings */
 img{
     width: 100%;
@@ -22,7 +50,6 @@ img{
 }
 .container{
     width: 88vw;
-    margin: 0 auto;
 }
 .lg-title,
 .md-title,
@@ -51,7 +78,6 @@ img{
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
-    opacity: 0.5;
     margin: 0.4rem 0;
 }
 
@@ -66,7 +92,7 @@ img{
     margin: 0.9rem auto;
 }
 .product{
-    margin: 2rem;
+    /* margin: 2rem; */
     position: relative;
 }
 .product-content{
@@ -101,19 +127,13 @@ img{
     border: none;
     transition: all 0.6s ease;
 }
-.btn-cart{
-    background: black;
-    color: white;
-}
-.btn-cart:hover{
-    background: var(--carribean-green);
-}
+
 .btn-buy{
     background: white;
 }
 .btn-buy:hover{
-    background: var(--carribean-green);
-    color: #fff;
+    background: #00B8FCFC;
+    color: #black;
 }
 .product-info{
     background: white;
@@ -144,26 +164,30 @@ img{
     transform: scale(1.1);
 }
 .product:hover .product-img{
-    background: var(--carribean-green);
+    background: #00B8FCFC;
 }
 .product:hover .product-btns{
     opacity: 1;
+}
+
+.product-filter-check{
+    font-size: 30px;
+}
+.product-filter-box{
+    width: 25px;
+    height: 25px;
 }
 
 /* Media Queries */
 @media screen and (min-width: 992px){
     .product-items{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .product-col-r-bottom{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media screen and (min-width: 1200px){
     .product-items{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .product{
         margin-right: 1rem;
@@ -176,11 +200,7 @@ img{
 
 @media screen and (min-width: 1336px){
     .product-items{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .product-collection-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .flex{
         height: 60vh;
