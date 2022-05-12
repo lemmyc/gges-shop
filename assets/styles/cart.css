@@ -40,6 +40,117 @@ main{
     
 }
 
+.container-title{
+    text-align: center;
+}
+.ord-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.ord-table,
+.ord-table th,
+.ord-table td{
+    border: 1px solid black;
+    font-size: 1.25rem;
+}
+.ord-table th{
+    padding: 8px 0;
+    text-align: center;
+}
+.ord-table tfoot td{
+    text-align: right;
+    padding: 4px 8px;
+}
+.h-prod-img{
+    width: 18%;
+}
+.h-prod-name{
+    width: 35%;
+}
+.h-prod-quant{
+    width: 12%;
+}
+.h-prod-price{
+    width: 12%;
+}
+.h-prod-total{
+    width: 15%;
+}
+.d-prod-img img{
+    width: 100%;
+    height: 128px;
+    object-fit: contain;
+}
+.d-prod-name,
+.d-prod-quant,
+.d-prod-price,
+.d-prod-total{
+    padding: 0 .5rem;
+    font-size: 1.25rem;
+}
+.d-prod-quant,
+.d-prod-price,
+.d-prod-total{
+    text-align: right;
+}
+.d-prod-quant{
+
+}
+.d-prod-price{
+
+}
+.d-prod-total{
+    
+}
+.d-prod-del{
+    text-align: center;
+}
+.d-prod-del-btn{
+    padding: 4px 12px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(0,184,252,0.99);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.ord-table tfoot .confirmation{
+    text-align: center;
+    position: relative;
+}
+.ord-table tfoot .total{
+    font-weight: bold;
+    color:#f90b6e ;
+}
+#confirm-btn{
+    margin: 8px 0;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0,184,252,0.99);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#confirm-btn:hover{
+    background-color: rgba(35, 130, 165, 0.99);
+
+}
+#print-btn{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 4px 8px;
+    color: white;
+    background-color: rgb(20, 53, 195);;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 
 footer {
     background-color: rgb(244,244,244);
