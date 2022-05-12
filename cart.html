@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark p-0">
       <!-- FOR XS SM DISPLAY -->
       <div class="container-fluid d-md-none">
-        <a class="navbar-brand flex-grow-1" href="#"><strong>GGES Shop</strong></a>
+        <a class="navbar-brand flex-grow-1" href="index.html"><strong>GGES Shop</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-light"></span>
@@ -53,7 +53,7 @@
             <li class="nav-item">
               <a class="nav-link text-light text-start" href="#">
                 <i class="fa-solid fa-tags"></i>
-                Khuyến mãi
+                Sản phẩm
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
@@ -86,7 +86,7 @@
               </form>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light text-start" href="#" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light text-start" href="cart.html" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -100,7 +100,7 @@
       </div>
       <!-- FOR >MD DISPLAY -->
       <div class="container-fluid d-none d-md-flex ms-3 me-3">
-        <a class="navbar-brand flex-grow-1" href="#"><strong>GGES Shop</strong></a>
+        <a class="navbar-brand flex-grow-1" href="index.html"><strong>GGES Shop</strong></a>
         <form class="d-flex flex-grow-1">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-secondary" type="submit">Search</button>
@@ -116,7 +116,7 @@
             <li class="nav-item flex-grow-1">
               <a class="nav-link text-light" href="#">
                 <i class="fa-solid fa-tags"></i>
-                Khuyến mãi
+                Sản phẩm
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
@@ -149,7 +149,7 @@
               </form>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light" href="cart.html" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -165,7 +165,7 @@
             <li class="nav-item flex-grow-1">
               <a class="nav-link text-light" href="#">
                 <i class="fa-solid fa-tags"></i>
-                Khuyến mãi
+                Sản phẩm
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
@@ -198,7 +198,7 @@
               </form>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">
+              <a class="nav-link text-light" href="cart.html" tabindex="-1" aria-disabled="true">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Giỏ hàng
               </a>
@@ -209,14 +209,44 @@
     </nav>
   </header>
 
-  <main class="container">
-      <div class="buy-list">
-          <table>
-              <th>
-                  
-              </th>
-          </table>
-      </div>
+  <main class="container mt-3">
+    <h1 class="container-title">CHI TIẾT ĐƠN HÀNG</h1>
+    <table class="ord-table">
+        <thead>
+            <tr>
+                <th class="h-prod-img">Hình SP</th>
+                <th class="h-prod-name">Tên SP</th>
+                <th class="h-prod-quant">Số lượng</th>
+                <th class="h-prod-price">Giá</th>
+                <th class="h-prod-total">Thành tiền</th>
+                <th class="h-prod-del"></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="totalPreTax" colspan="6">
+                    Tổng thành tiền (A) = 0&nbsp;₫
+                </td>
+            </tr>
+            <tr>
+                <td class="discount" colspan="6">
+                    Chiết khấu (B) = ... x A = 0&nbsp;₫
+                </td>
+            </tr>   
+            <tr>
+                <td class="tax" colspan="6">
+                    Thuế (C) = 10% x (A - B) = 0&nbsp;₫
+                </td>
+            </tr>
+            <tr>
+                <td class="total" colspan="6">
+                    Tổng đơn hàng = A - B + C = 0&nbsp;₫
+                </td>
+            </tr>
+        </tfoot>
+    </table>
   </main>
 
   <footer class="text-center text-dark">
@@ -349,7 +379,7 @@
     <!-- Copyright -->
     <div class="text-center p-3 text-white" style="background-color: rgb(33,37,41);">
       <b>© 2020 Copyright:</b>
-      <a class="text-primary" href="#"><b>GGES Shop</b></a>
+      <a class="text-primary" href="index.html"><b>GGES Shop</b></a>
     </div>
     <!-- Copyright -->
   </footer>
