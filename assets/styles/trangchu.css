@@ -55,7 +55,11 @@
 }
 .featured-content>a:hover{
     background-color: rgba(16, 154, 203, 0.99);
-
+}
+.carousel-control-prev-icon{
+    transform: translateX(1rem)
+} .carousel-control-next-icon{
+    transform: translateX(-1rem)
 }
 .navbar{
     background-color: #2f3132!important;
