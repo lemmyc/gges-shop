@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/icons/fontawesome-6.1.1/css/all.min.css">
   <link rel="stylesheet" href="./assets/frameworks/bootstrap-5.1.3/css/bootstrap.min.css">
   <script src="./assets/frameworks/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="sanpham.css">
+  <link rel="stylesheet" href="./assets/styles/sanpham.css">
   <link rel="stylesheet" href="style.css">
   <script src="./assets/scripts/main.js" defer></script>
   <!-- slick css -->
@@ -24,6 +24,7 @@
   <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
   <!-- product filter -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
+  <script src="./assets/scripts/sanpham.js" defer></script>
   <title>GGES Shop</title>
 </head>
 
@@ -205,144 +206,624 @@
       </div>
     </nav>
   </header>
-  <div class="container">
-    <div class="row ms-0 me-0">
-      <div class="col text-center my-4">
-        <h1 class="fs-2">Trending</h1>
-      </div>
-    </div>
-    <div class="row ms-0 me-0">
-      <div class="col-3">
-        <div class="row d-flex justify-content-center flex-column" id="form-ui">
-          <h1>Danh mục sản phẩm</h1>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
-            CPU</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
-            Mainboard</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAN" />
-            RAM</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
-            VGA</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
-            Bàn Phím</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
-            Chuột</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
-            Tai Nghe</label>
-          <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
-            Vỏ (Case)</label>
+  <div class="container product-container">
+      <div class="row">
+        <div class="col text-center my-4">
+          <h1 class="fs-2">Trending</h1>
         </div>
       </div>
-      <div class="col-9">
-        <!-- column divider -->
-        <div class="products pt-0">
-          <div class="container w-100 ps-0 pe-0 ms-0 me-0">
-            <h1 class="lg-title">Sản Phẩm</h1>
-            <p class="text-light"></p>
-
-            <div class="product-items">
-              <!-- divider -->
-              <div class="product">
-                <div class="product-content">
-                  <div class="product-img">
-                    <img
-                      src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png"
-                      alt="product image">
-                  </div>
-                  <div class="product-btns">
-                    <button type="button" class="btn-buy"> mua ngay
-                      <span><i class="fas fa-shopping-cart"></i></span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="product-info">
-                  <div class="product-info-top">
-                    <h2 class="sm-title">Bàn phím</h2>
-                  </div>
-                  <a href="#" class="product-name">Bàn phím Logitech Pro Series</a>
-                  <p class="product-price">1.000.000 vnđ</p>
-                </div>
-              </div>
-              <!-- divider -->
-              <!-- divider -->
-              <div class="product">
-                <div class="product-content">
-                  <div class="product-img">
-                    <img
-                      src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png"
-                      alt="product image">
-                  </div>
-                  <div class="product-btns">
-                    <button type="button" class="btn-buy"> mua ngay
-                      <span><i class="fas fa-shopping-cart"></i></span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="product-info">
-                  <div class="product-info-top">
-                    <h2 class="sm-title">Bàn phím</h2>
-                  </div>
-                  <a href="#" class="product-name">Bàn phím Logitech Pro Series</a>
-                  <p class="product-price">1.000.000 vnđ</p>
-                </div>
-              </div>
-              <!-- divider -->
-              <!-- divider -->
-              <div class="product">
-                <div class="product-content">
-                  <div class="product-img">
-                    <img
-                      src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png"
-                      alt="product image">
-                  </div>
-                  <div class="product-btns">
-                    <button type="button" class="btn-buy"> mua ngay
-                      <span><i class="fas fa-shopping-cart"></i></span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="product-info">
-                  <div class="product-info-top">
-                    <h2 class="sm-title">Bàn phím</h2>
-                  </div>
-                  <a href="#" class="product-name">Bàn phím Logitech Pro Series</a>
-                  <p class="product-price">1.000.000 vnđ</p>
-                </div>
-              </div>
-              <!-- divider -->
-              <!-- divider -->
-              <div class="product">
-                <div class="product-content">
-                  <div class="product-img">
-                    <img
-                      src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png"
-                      alt="product image">
-                  </div>
-                  <div class="product-btns">
-                    <button type="button" class="btn-buy"> mua ngay
-                      <span><i class="fas fa-shopping-cart"></i></span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="product-info">
-                  <div class="product-info-top">
-                    <h2 class="sm-title">Bàn phím</h2>
-                  </div>
-                  <a href="#" class="product-name">Bàn phím Logitech Pro Series</a>
-                  <p class="product-price">1.000.000 vnđ</p>
-                </div>
-              </div>
-              <!-- divider -->
-            </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="row d-flex justify-content-center flex-column" id="form-ui">
+            <h1>Danh mục sản phẩm</h1>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
+              CPU</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
+              Mainboard</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAM" />
+              RAM</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
+              VGA</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
+              Bàn Phím</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
+              Chuột</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
+              Tai Nghe</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
+              Vỏ (Case)</label>
           </div>
         </div>
-        <!-- column divider -->
+        <div class="col-9">
+          <!-- column divider -->
+          <div class="products pt-0">
+            <div class="container w-100">
+              <h1 class="lg-title">Sản Phẩm</h1>
+              <p class="text-light"></p>
+  
+              <div class="product-items">
+                <!-- divider -->
+                <div class="product CPU">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/cpu/intel-core-i5-7500.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">CPU</h2>
+                    </div>
+                    <p class="product-name">CPU Intel Core I5-7500 (3.4GHz - 3.8GHz)</p>
+                    <p class="product-price">4.490.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider --> 
+                <div class="product CPU">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/cpu/intel-core-i5-8600k.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">CPU</h2>
+                    </div>
+                    <p class="product-name">CPU Intel Core I5-8600K (3.6GHz)</p>
+                    <p class="product-price">6.669.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider --> 
+                <div class="product CPU">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/cpu/intel-core-i9-11900.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">CPU</h2>
+                    </div>
+                    <p class="product-name">CPU INTEL Core i9-11900 (8C/16T, 2.50 GHz - 5.20 GHz, 16MB) - 1200</p>
+                    <p class="product-price">13.390.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mainboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mainboard/msi-z390a-pro.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Mainboard</h2>
+                    </div>
+                    <a href="#" class="product-name">Mainboard MSI Z390-A Pro</a>
+                    <p class="product-price">3.299.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mainboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mainboard/msi-meg-z490.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Mainboard</h2>
+                    </div>
+                    <a href="#" class="product-name">Mainboard MSI MEG Z490 GODLIKE</a>
+                    <p class="product-price">20.599.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mainboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mainboard/msi-z590a-pro.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Mainboard</h2>
+                    </div>
+                    <a href="#" class="product-name">Mainboard MSI Z590-A PRO</a>
+                    <p class="product-price">4.900.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product RAM">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/ram/corsair-rgb-pro-3200.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">RAM</h2>
+                    </div>
+                    <a href="#" class="product-name">RAM Corsair Vengeance RGB Pro 16GB DDR4 3200MHz</a>
+                    <p class="product-price">2.290.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <div class="product RAM">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/ram/corsair-lpx.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">RAM</h2>
+                    </div>
+                    <a href="#" class="product-name">RAM Corsair Vengeance LPX 8GB DDR4 3000MHz</a>
+                    <p class="product-price">1.109.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product RAM">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/ram/kingston-fury.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">RAM</h2>
+                    </div>
+                    <a href="#" class="product-name">RAM KINGSTON Fury Black 8GB DDR4 2666MHz</a>
+                    <p class="product-price">1.350.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product VGA">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/vga/gtx-1660ti.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">VGA</h2>
+                    </div>
+                    <a href="#" class="product-name">GIGABYTE GeForce GTX 1660Ti 6GB GDDR6 OC</a>
+                    <p class="product-price">9.209.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product VGA">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/vga/rtx-3060ti.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">VGA</h2>
+                    </div>
+                    <a href="#" class="product-name">GIGABYTE GeForce RTX 3060 Ti VISION OC 8G 8GB GDDR6</a>
+                    <p class="product-price">18.629.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product VGA">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/vga/rx-6700xt.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">VGA</h2>
+                    </div>
+                    <a href="#" class="product-name">ASUS TUF Gaming Radeon™ RX 6700 XT OC Edition 12GB GDDR6</a>
+                    <p class="product-price">24.109.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Case">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/case/golden-field-h3b.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Vỏ (Case)</h2>
+                    </div>
+                    <a href="#" class="product-name">Case Máy tính Golden Field H3B - Mid Tower (Đen)</a>
+                    <p class="product-price">550.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Case">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/case/sama-shadow.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Vỏ (Case)</h2>
+                    </div>
+                    <a href="#" class="product-name">Case Máy tính Sama Shadow</a>
+                    <p class="product-price">990.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Case">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/case/xigmatek-aquarius.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Vỏ (Case)</h2>
+                    </div>
+                    <a href="#" class="product-name">Case Máy tính Xigmatek AQUARIUS S QUEEN (No Fan) Hồng</a>
+                    <p class="product-price">1.799.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Keyboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/keyboard/corsair-k63.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Bàn Phím</h2>
+                    </div>
+                    <a href="#" class="product-name">Bàn phím cơ CORSAIR K63 (TKL/Cherry MX Red/Đỏ)</a>
+                    <p class="product-price">1.990.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Keyboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/keyboard/strix-flare.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Bàn Phím</h2>
+                    </div>
+                    <a href="#" class="product-name">Bàn phím cơ ASUS Strix Flare (Fullsize/Cherry MX Red)</a>
+                    <p class="product-price">3.990.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Keyboard">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/keyboard/strix-flare.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Bàn Phím</h2>
+                    </div>
+                    <a href="#" class="product-name">Bàn phím Logitech Gaming G213 (Đen)</a>
+                    <p class="product-price">3.990.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mouse">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mouse/logitech-g502.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Chuột</h2>
+                    </div>
+                    <a href="#" class="product-name">Chuột gaming Logitech G502 HERO (Đen)</a>
+                    <p class="product-price">1.049.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mouse">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mouse/dareu-em908.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Chuột</h2>
+                    </div>
+                    <a href="#" class="product-name">Chuột máy tính DARE-U EM908</a>
+                    <p class="product-price">299.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Mouse">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/mouse/dareu-lm130.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Chuột</h2>
+                    </div>
+                    <a href="#" class="product-name">Chuột máy tính Dareu LM130 (Đen)</a>
+                    <p class="product-price">149.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Earphone">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/earphones/logitech-g331.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Tai Nghe</h2>
+                    </div>
+                    <a href="#" class="product-name">Tai nghe Over-ear Logitech G331 Wired Gaming (Đen)</a>
+                    <p class="product-price">1.549.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Earphone">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/earphones/logitech-g733.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Tai Nghe</h2>
+                    </div>
+                    <a href="#" class="product-name">Tai nghe không dây gaming Logitech G733 Lightspeed RGB (Trắng)</a>
+                    <p class="product-price">2.989.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+                <!-- divider -->
+                <div class="product Earphone">
+                  <div class="product-content">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-images/earphones/dareu-eh416.webp"
+                        alt="product image">
+                    </div>
+                    <div class="product-btns">
+                      <button type="button" class="btn-buy"> mua ngay
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                    </div>
+                  </div>
+  
+                  <div class="product-info">
+                    <div class="product-info-top">
+                      <h2 class="sm-title">Tai Nghe</h2>
+                    </div>
+                    <a href="#" class="product-name">Tai nghe DareU EH416 RGB (Đen)</a>
+                    <p class="product-price">349.000 vnđ</p>
+                  </div>
+                </div>
+                <!-- divider -->
+              </div>
+            </div>
+          </div>
+          <!-- column divider -->
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 
 

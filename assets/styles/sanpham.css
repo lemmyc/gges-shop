@@ -49,7 +49,9 @@ img{
     display: block;
 }
 .container{
-    width: 88vw;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 .lg-title,
 .md-title,
@@ -91,15 +93,26 @@ img{
     width: 70%;
     margin: 0.9rem auto;
 }
-.product{
-    /* margin: 2rem; */
+/* .product{
     position: relative;
-}
+    width: 400px;
+    height: 600px;
+} */
 .product-content{
     background: var(--gray);
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
 }
+/* .product-name{
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+} */
+
 .product-img{
     background: var(--white-light);
     box-shadow: 0 0 20px 10px var(--white-light);
@@ -133,7 +146,7 @@ img{
 }
 .btn-buy:hover{
     background: #00B8FCFC;
-    color: #black;
+    color: black;
 }
 .product-info{
     background: white;
@@ -159,6 +172,8 @@ img{
 }
 .product-img img{
     transition: transform 0.6s ease;
+    width: 100%;
+    height: 100%;
 }
 .product:hover .product-img img{
     transform: scale(1.1);
@@ -179,10 +194,18 @@ img{
 }
 
 /* Media Queries */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 500px){
     .product-items{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .product{
+        position: relative;
+        width: 95%;
+        height: 550px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 5px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -190,22 +213,45 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     .product{
-        margin-right: 1rem;
-        margin-left: 1rem;
+        position: relative;
+        width: 400px;
+        height: 550px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 5px;
     }
     .products .text-light{
         width: 50%;
     }
 }
 
-@media screen and (min-width: 1336px){
+@media screen and (min-width: 1400px){
     .product-items{
         grid-template-columns: repeat(3, 1fr);
     }
     .flex{
-        height: 60vh;
+        /* height: 60vh; */
     }
-    .product-col-left{
-        height: 121.5vh;
+    .product{
+        position: relative;
+        width: 300px;
+        height: 550px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 5px;
+    }
+    .product-name{
+        line-height: 20px;
+        height: 40px;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        height: 200px;
     }
 }
