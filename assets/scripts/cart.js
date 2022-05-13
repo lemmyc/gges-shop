@@ -1,5 +1,10 @@
 var itemList={
-    "gpu-asus-rtx-3060":{   
+    "sp001":{   
+        "name":"ASUS ROG Strix GeForce RTX 3060 Ti Gaming 8GB V2",
+        "price":16490000,
+        "photo":"assets/images/product-images/asus-rog-rtx-3060.webp"
+    },
+    "sp002":{   
         "name":"ASUS ROG Strix GeForce RTX 3060 Ti Gaming 8GB V2",
         "price":16490000,
         "photo":"assets/images/product-images/asus-rog-rtx-3060.webp"
@@ -31,7 +36,7 @@ for(var key in localDt){
                 <td class="d-prod-total">${total}</td>
                 <td class="d-prod-del">
                 <div class="input-group inline-group">
-                    <input class="form-control quantity flex-grow-0 w-50  p-0 mb-3 text-center" min="1" name="quantity" value="1" type="number">
+                    <input class="form-control quantity flex-grow-0 w-50  p-0 mb-3 text-center" min="1" name="quantity" data-code=${key} value="${orderCount}" oninput="handleInputQuant(this)"  type="number">
                 </div>
                     <button class="d-prod-del-btn" data-code=${key} onclick="handleRemove('${index}', '${key}')">
                         <i class="fa-solid fa-trash-can"></i>
@@ -103,10 +108,11 @@ function handleConfirmClick(){
     if(localStorage.length > 0){
         for(var key in localStorage){
             if(localStorage.hasOwnProperty(key)){
-                window.localStorage.removeItem(key)
+                if(key.slice(0,2) === "sp")
+                    window.localStorage.removeItem(key)
             }
         }
-        alert('Đơn hàng của bạn đã được chúng tôi tiếp nhận.\r\nXin cảm ơn vì đã ủng hộ Sữa chua Freeze !!!');
+        alert('Đơn hàng của bạn đã được chúng tôi tiếp nhận.\r\nXin cảm ơn vì đã ủng hộ GGES Shop !!!');
         location.reload();
     }else
         alert('Xin quý khách hãy thêm ít nhất một sản phẩm.')
@@ -135,6 +141,12 @@ function toggleTable(){
             </div>
         `
     }
+}
+function handleInputQuant(e){
+    let productCode = e.dataset.code;
+    let inputValue = e.value;
+    window.localStorage.setItem(productCode, inputValue);
+    location.reload();
 }
 window.onstorage = ()=>{
     location.reload();
