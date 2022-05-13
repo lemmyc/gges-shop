@@ -25,6 +25,9 @@
   <!-- product filter -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
   <script src="./assets/scripts/sanpham.js" defer></script>
+  <!-- order handling -->
+  <script src="./assets/scripts/handleOrder.js" defer></script>
+
   <title>GGES Shop</title>
 </head>
 
@@ -45,7 +48,7 @@
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
-              
+
               <ul class="dropdown-menu dropdown-menu-end">
                 <header class="noti-header">
                   <h3 class="noti-header-content">Thông báo mới nhất</h3>
@@ -116,12 +119,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light text-start" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle text-light text-start login-btn" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action="" name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Tên người dùng"
@@ -132,11 +135,11 @@
                     id="inputPassword1">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox" name="rememberMe" class="form-check-input" id="inputCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -153,8 +156,7 @@
           </ul>
           <form class="d-flex flex-grow-1 mb-3">
             <input class="form-control me-2" type="search" placeholder="Nhập mã hoặc tên sản phẩm" aria-label="Search">
-            <button class="btn btn-secondary flex-grow-1" type="submit"><i
-                class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn btn-secondary flex-grow-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
       </div>
@@ -163,8 +165,7 @@
         <a class="navbar-brand me-5" href="index.html"><strong>GGES Shop</strong></a>
         <form class="d-flex flex-grow-1">
           <input class="form-control me-2" type="search" placeholder="Nhập mã hoặc tên sản phẩm" aria-label="Search">
-          <button class="btn btn-secondary flex-grow-1" type="submit"><i
-              class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn btn-secondary flex-grow-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div class="navbar-collapse flex-grow-1" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex d-lg-none flex-row">
@@ -173,7 +174,7 @@
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
-              
+
               <ul class="dropdown-menu pos-absolute">
                 <header class="noti-header">
                   <h3 class="noti-header-content">Thông báo mới nhất</h3>
@@ -244,12 +245,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light darker-when-hover login-btn" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action="" name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu pos-absolute">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail2" placeholder="Tên người dùng"
@@ -260,11 +261,11 @@
                     id="inputPassword2">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputCheck2">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox" name="rememberMe" class="form-check-input" id="inputCheck2">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -282,10 +283,10 @@
           <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex w-100 ms-xl-2">
             <li class="nav-item flex-grow-1 dropdown">
               <a class="nav-link text-light darker-when-hover dropdown-toggle noti-btn" href="#" id="notiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
-              
+
               <ul class="dropdown-menu dropdown-menu-end">
                 <header class="noti-header">
                   <h3 class="noti-header-content">Thông báo mới nhất</h3>
@@ -356,12 +357,12 @@
               </a>
             </li>
             <li class="nav-item dropdown flex-grow-1">
-              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light darker-when-hover login-btn" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-user"></i>
                 Đăng nhập
               </a>
-              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+              <form action=""  name="login-form" onsubmit="" method="GET"
                 class="dropdown-menu dropdown-menu-end login-menu">
                 <div class="mb-3">
                   <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Tên người dùng"
@@ -372,11 +373,11 @@
                     id="inputPassword3">
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="inputRemember3">
-                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                  <input type="checkbox"  name="rememberMe" class="form-check-input" id="inputRemember3">
+                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài khoản</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary">
-                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                <input type="submit" value="Đăng nhập" class="btn btn-primary submit-login-btn">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="dangky.html" style="text-decoration: none;"> Đăng
                     ký ngay</a>
                 </div>
                 <div class="form-text text-dark">
@@ -395,6 +396,7 @@
       </div>
     </nav>
   </header>
+
   <div class="container-fluid product-container">
     <div class="row w-100 mx-0">
       <div class="col text-center my-4">
@@ -988,7 +990,21 @@
     <!-- </div> -->
   </div>
 
+  <div class="position-fixed top-0 end-0 p-3 toast-container" style="z-index: 11">
+    <div id="liveToast" class="toast hide bg-light" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">ĐẶT HÀNG THÀNH CÔNG</strong>
+        <!-- <small>11 mins ago</small> -->
+        <button type="button" class="btn-close" data-bs-dismiss="toast" data-bs-autohide="true" data-bs-delay="2500" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        
+      </div>
+    </div>
+  </div>
 
+  <script src="./assets/scripts/login.js"></script>
+  <script src="./assets/scripts/logout.js"></script>
 </body>
 
 </html>
