@@ -334,6 +334,9 @@
     .open-blockquote-icon{
         font-size: 60px;
     }
+    #register-form{
+        width: 50%!important;
+    }
 }
 
 /* Man hinh cuc lon >=1500px */
@@ -423,5 +426,8 @@
 
     .open-blockquote-icon{
         font-size: 100px;
+    }
+    #register-form{
+        width: 50%!important;
     }
 }
