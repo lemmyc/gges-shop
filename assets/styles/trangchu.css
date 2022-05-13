@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
-
 *,*::before, *::after{
     box-sizing: border-box;
 }
-body{
-    font-family: 'Quicksand', sans-serif;
-}
+
 .font-20{
     font-size: 20px!important;
 }
@@ -227,11 +223,20 @@ body{
     text-align: center;
 }
 
+.promotion-logo img{
+    width: 200px;
+    height: 200px;
+}
+
 .promotion-details{
     color: white;
     align-self: center;
     justify-self: center;
     text-align: left;
+}
+.promotion-details-btn{
+    width: 103.79px;
+    height: 38px;
 }
 footer {
     background-color: rgb(244,244,244);
@@ -251,17 +256,19 @@ footer {
 
 .footer-email-form-content {
     font-size: 16px;
+    padding: 4px 8px;
+    
 }
 
 .footer-email-btn {
     padding: 0;
-    text-align: left;
-    padding-left: 10px;
 }
 
 .footer-email-btn-content {
     background-color: rgb(33,37,41);
     font-size: 16px;
+    padding: 4px 8px;
+    margin: 1rem 0;
 }
 
 .footer-email-btn-content:hover {
@@ -269,27 +276,19 @@ footer {
     color: white;
 }
 
-.footer-email-check-info {
-    padding-top: 3px;
-    padding-right: 0;
-}
 
-.footer-contact {
-    display: block;
 
+.footer-email {
+    flex: 0.8;
 }
 
 .footer-social {
-    margin-right: 0px;
+    flex: 1;
 }
 
 .check-box {
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 20px;
-    max-height: 20px;
+    height: 30px;
     border: rgb(105,113,114) 3px solid;
-    cursor: pointer;
 }
 
 .check-info {
@@ -298,8 +297,7 @@ footer {
 }
 
 .facebook-btn {
-    font-size: 40px;
-    padding: 0;
+    font-size: 32px;
     background-color: rgb(244,244,244);
 }
 
@@ -308,8 +306,7 @@ footer {
 }
 
 .twitter-btn {
-    font-size: 40px;
-    padding: 0;
+    font-size: 32px;
     background-color: rgb(244,244,244);
 }
 
@@ -318,8 +315,7 @@ footer {
 }
 
 .instagram-btn {
-    font-size: 40px;
-    padding: 0;
+    font-size: 32px;
     background-color: rgb(244,244,244);
 }
 
@@ -328,17 +324,37 @@ footer {
 }
 
 .youtube-btn {
-    font-size: 40px;
-    padding: 0;
+    font-size: 32px;
     background-color: rgb(244,244,244);
 }
 
 .youtube-btn:hover {
-    color: rgb(245,0,0);
+    color: rgb(230,0,0);
+}
+@media only screen and (max-width: 320px){
+    .promotion-container-1{
+        height: 90vh;
+    }
+    .promotion-title{
+        font-size: 20px;
+    }
+    .promotion-desc{
+        font-size: 10px;
+    }
 }
 
-
-
+@media only screen and (max-width: 400px){
+    .promotion-details-title{
+        font-size: 25px;
+    }
+    .promotion-details-text{
+        font-size: 15px;
+    }
+    .promotion-logo img{
+        width: 100px;
+        height: 100px;
+    }
+}
 
 @media only screen and (max-width: 770px) {
     .items-container {
@@ -372,6 +388,17 @@ footer {
     .carousel-items .slick-prev {
         left: -10px;
     }
+    .promotion-title{
+        font-size: 40px;
+    }
+    .promotion-desc{
+        font-size: 15px;
+    }
+    
+    /* .promotion-logo{
+        width: 10px;
+        height: 10px;
+    } */
 }
 /* @media only screen and (max-width: 1020px) and (min-width: 991px) {
     .items-container {
