@@ -140,14 +140,18 @@ for(var key in localDt){
             <tr>
                 <td class="d-prod-img"><img src="${photo}" alt=""></td>
                 <td class="d-prod-name">${name}</td>
-                <td class="d-prod-quant">${orderCount}</td>
+                <td class="d-prod-quant text-center">
+                    <input class="form-control quantity flex-grow-0 p-0 text-center" min="1"
+                        name="quantity" data-code=${key} value="${orderCount}" oninput="handleInputQuant(this)"  
+                        type="number"
+                        style="max-width:75%; margin: 0 auto;"
+                    >
+                </td>
                 <td class="d-prod-price">${price}</td>
                 <td class="d-prod-total">${total}</td>
                 <td class="d-prod-del">
-                <div class="input-group inline-group">
-                    <input class="form-control quantity flex-grow-0 w-50  p-0 mb-3 text-center" min="1" name="quantity" data-code=${key} value="${orderCount}" oninput="handleInputQuant(this)"  type="number">
-                </div>
-                    <button class="d-prod-del-btn" data-code=${key} onclick="handleRemove('${index}', '${key}')">
+                
+                    <button class="d-prod-del-btn p-1" data-code=${key} onclick="handleRemove('${index}', '${key}')">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </td>
@@ -201,7 +205,7 @@ function getOrdFooter(){
         <tr>
             <td class="confirmation" colspan="6">
                 <button id="confirm-btn" onclick="handleConfirmClick()">Xác nhận đơn hàng</button>
-                <button id="print-btn" onclick="handlePrintClick()"><i class="fa-solid fa-print"></i> In bản báo giá</button>
+                <button id="print-btn" class="d-none d-md-block" onclick="handlePrintClick()"><i class="fa-solid fa-print"></i> In bản báo giá</button>
             </td>
         </tr>
     `

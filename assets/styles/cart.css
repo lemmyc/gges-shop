@@ -62,16 +62,16 @@
     width: 18%;
 }
 .h-prod-name{
-    width: 35%;
+    width: 18%;
 }
 .h-prod-quant{
-    width: 13%;
+    width: 18%;
 }
 .h-prod-price{
-    width: 13%;
+    width: 18%;
 }
 .h-prod-total{
-    width: 13%;
+    width: 18%;
 }
 .d-prod-img img{
     width: 100%;
@@ -147,106 +147,5 @@
     cursor: pointer;
     border-radius: 3px;
 }
-.inline-group {
-    width: 100%;
-    /* padding: 0 1rem; */
-    justify-content: center;
-}
-  
-.inline-group .form-control{
-    text-align: right;
-}
-
-footer {
-    background-color: rgb(244,244,244);
-}
-
-.footer-link {
-    text-align: left;
-}
-
-.footer-link-content:hover {
-    text-decoration: underline;
-}
-
-.footer-email-form {
-    padding: 0;
-}
-
-.footer-email-form-content {
-    font-size: 16px;
-    padding: 4px 8px;
-    
-}
-
-.footer-email-btn {
-    padding: 0;
-}
-
-.footer-email-btn-content {
-    background-color: rgb(33,37,41);
-    font-size: 16px;
-    padding: 4px 8px;
-    margin: 1rem 0;
-}
-
-.footer-email-btn-content:hover {
-    background-color: rgb(25, 135, 84);
-    color: white;
-}
 
 
-
-.footer-email {
-    flex: 0.8;
-}
-
-.footer-social {
-    flex: 1;
-}
-
-.check-box {
-    height: 30px;
-    border: rgb(105,113,114) 3px solid;
-}
-
-.check-info {
-    text-align: left;
-    font-weight: bold;
-}
-
-.facebook-btn {
-    font-size: 32px;
-    background-color: rgb(244,244,244);
-}
-
-.facebook-btn:hover {
-    color: rgb(59,89,152);
-}
-
-.twitter-btn {
-    font-size: 32px;
-    background-color: rgb(244,244,244);
-}
-
-.twitter-btn:hover {
-    color: rgb(29,161,242);
-}
-
-.instagram-btn {
-    font-size: 32px;
-    background-color: rgb(244,244,244);
-}
-
-.instagram-btn:hover {
-    color: rgb(226,48,108);
-}
-
-.youtube-btn {
-    font-size: 32px;
-    background-color: rgb(244,244,244);
-}
-
-.youtube-btn:hover {
-    color: rgb(230,0,0);
-}

@@ -13,14 +13,14 @@
     }
 
     .feedback-banner{
-        background-color:lightyellow;
+        /* background-color:lightyellow; */
         flex-direction: column;
-        border: 3px solid lightgray;
+        /* border: 3px solid lightgray; */
         border-radius: 10px;
     }
 
     .feedback-banner{
-        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        /* background-image: url(./assets/images/cus_feedback-images/background.jpg); */
         height: 600px;
         /* width: 330px; */
         margin-left: 0px;
@@ -34,11 +34,11 @@
         margin-right: 5px;
         padding-right: 10px;
         padding-bottom: 10px;
-        border-bottom: 5px double lightgray;
-        /* border-right: 5px solid lightgray; */
-        border-bottom-left-radius: 15%;
+        /* border-bottom: 1px solid lightgray; */
+        /* border-right: 1px solid lightgray; */
+        /* border-bottom-left-radius: 15%;
         border-bottom-right-radius: 10%;
-        border-top-right-radius: 5%;
+        border-top-right-radius: 5%; */
         order: 2;
         text-align: center;
         font-size: 25px;
@@ -203,12 +203,12 @@
 /* Man hinh trung */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
     .feedback-banner{
-        background-color:lightyellow;
+        /* background-color:lightyellow; */
         flex-direction: column;
     }
 
     .feedback-banner{
-        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        /* background-image: url(./assets/images/cus_feedback-images/background.jpg); */
         height: 700px;
     }
 
@@ -220,11 +220,11 @@
         margin-right: 100px;
         padding-right: 10px;
         padding-bottom: 10px;
-        border-bottom: 5px double lightgray;
-        /* border-right: 5px solid lightgray; */
-        border-bottom-left-radius: 15%;
+        /* border-bottom: 1px solid lightgray; */
+        /* border-right: 1px solid lightgray; */
+        /* border-bottom-left-radius: 15%;
         border-bottom-right-radius: 10%;
-        border-top-right-radius: 5%;
+        border-top-right-radius: 5%; */
         order: 2;
         text-align: center;
         font-size: 25px;
@@ -385,11 +385,11 @@
 /* Man hinh lon 996->1500 */
 @media only screen and (min-width: 996px) and (max-width: 1500px) {
     .feedback-banner{
-        background-color:lightyellow;
+        /* background-color:lightyellow; */
     }
 
     .feedback-banner{
-        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        /* background-image: url(./assets/images/cus_feedback-images/background.jpg); */
         height: 430px;
     }
 
@@ -403,11 +403,11 @@
         /* font-weight: bold; */
         padding-right: 10px;
         padding-bottom: 10px;
-        border-bottom: 5px double lightgray;
-        border-right: 5px solid lightgray;
-        border-bottom-left-radius: 15%;
+        /* border-bottom: 1px solid lightgray; */
+        /* border-right: 1px solid lightgray; */
+        /* border-bottom-left-radius: 15%;
         border-bottom-right-radius: 10%;
-        border-top-right-radius: 5%;
+        border-top-right-radius: 5%; */
     }
 
     .feedback-content small{
@@ -541,11 +541,11 @@
 /* Man hinh cuc lon >=1500px */
 @media only screen and (min-width: 1500px) {
     .feedback-banner{
-        background-color:lightyellow;
+        /* background-color:lightyellow; */
     }
 
     .feedback-banner{
-        background-image: url(./assets/images/cus_feedback-images/background.jpg);
+        /* background-image: url(./assets/images/cus_feedback-images/background.jpg); */
         height: 450px;
     }
 
@@ -559,11 +559,11 @@
         /* font-weight: bold; */
         padding-right: 20px;
         padding-bottom: 20px;
-        border-bottom: 5px double lightgray;
-        border-right: 5px solid lightgray;
-        border-bottom-left-radius: 15%;
+        /* border-bottom: 1px solid lightgray; */
+        /* border-right: 1px solid lightgray; */
+        /* border-bottom-left-radius: 15%;
         border-bottom-right-radius: 10%;
-        border-top-right-radius: 5%;
+        border-top-right-radius: 5%; */
     }
 
     .feedback-content small{
