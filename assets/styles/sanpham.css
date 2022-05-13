@@ -95,7 +95,7 @@ img{
 }
 
 .product-content{
-    background: var(--gray);
+    background: #fff;
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
 }
@@ -110,6 +110,7 @@ img{
     -webkit-line-clamp: 2;
 }
 .product-info{
+    border-top: 1px solid #ccc;
     background: white;
     padding: 2rem;
     height: 200px;
@@ -201,6 +202,7 @@ img{
 }
 
 .product-filter-dropdown{
+    list-style-type: none;
     padding-left: 10px;
 }
 
