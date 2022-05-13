@@ -200,12 +200,12 @@ img{
         grid-template-columns: repeat(1, 1fr);
     }
     .product{
-        position: relative;
+        /* position: relative;
         width: 95%;
         height: 550px;
         margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 5px; */
     }
 }
 @media screen and (min-width: 900px){
@@ -213,12 +213,12 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     .product{
-        position: relative;
+        /* position: relative;
         width: 30%;
         height: 550px;
         margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 5px; */
     }
     .products .text-light{
         width: 50%;
@@ -233,12 +233,12 @@ img{
         /* height: 60vh; */
     }
     .product{
-        position: relative;
+        /* position: relative;
         width: 300px;
         height: 550px;
         margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
     }
     .product-name{
         font-size: 16px;
