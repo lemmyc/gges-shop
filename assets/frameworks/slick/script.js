@@ -4,9 +4,11 @@ $(document).ready(() => {
         dots: true,
         arrows: true,
         infinite: true,
-        speed: 300,
+        speed: 250,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 8000,
         // prevArrow: '<div class="slick-prev"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
         responsive: [
             // {
