@@ -121,6 +121,7 @@ var itemList={
     }
 };
 
+
 const placeOrdBtns = document.querySelectorAll('.product .product-btns .btn-buy');
 console.log(placeOrdBtns);
 placeOrdBtns.forEach((placeOrdBtn, index) => {
@@ -133,6 +134,9 @@ placeOrdBtns.forEach((placeOrdBtn, index) => {
     // placeOrdBtn.addEventListener('click', () => placeOrd(itemList[listKey]));
 });
 
+var myAlert = document.getElementById('liveToast');
+var bsAlert = new bootstrap.Toast(myAlert);
+
 function placeOrd(productId, element) {
     let currentItemCount;       // số lượng sản phẩm hiện tại
 // Nếu sản phẩm không tồn tại => cho currentCount sp = 0
@@ -143,6 +147,8 @@ function placeOrd(productId, element) {
         // Lấy sp có tồn tại => lấy số lượng sp trong localStorage để làm việc
 
     let totalCount = currentItemCount + 1;
-    alert('Đã thêm ' + itemList[productId].name + ' vào giỏ hàng');
+    //alert('Đã thêm ' + itemList[productId].name + ' vào giỏ hàng');
+    myAlert.querySelector('.toast-body').innerText = 'Đã thêm ' + itemList[productId].name + ' vào giỏ hàng';
+    bsAlert.show();
     window.localStorage.setItem(productId, totalCount);
 }
