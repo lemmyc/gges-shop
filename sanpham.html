@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/icons/fontawesome-6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/frameworks/bootstrap-5.1.3/css/bootstrap.min.css">
+  <script src="./assets/frameworks/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./assets/styles/sanpham.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./assets/scripts/main.js" defer></script>
+  <!-- slick css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <!-- jQuery for slick carousel addon -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script src="./assets/frameworks/slick/script.js" defer></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <!-- product filter -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
+  <script src="./assets/scripts/sanpham.js" defer></script>
+  <title>GGES Shop</title>
+</head>
+
+<body>
+  <header class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <!-- FOR XS SM DISPLAY -->
+      <div class="container-fluid d-md-none">
+        <a class="navbar-brand flex-grow-1" href="index.html"><strong>GGES Shop</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light text-start" aria-current="page" href="#">
+                <i class="fa-solid fa-bell"></i>
+                Thông báo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-start" href="sanpham.html">
+                <i class="fa-solid fa-tags"></i>
+                Sản phẩm
+              </a>
+            </li>
+            <li class="nav-item dropdown flex-grow-1">
+              <a class="nav-link dropdown-toggle text-light text-start" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                Đăng nhập
+              </a>
+              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                class="dropdown-menu dropdown-menu-end login-menu">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Tên người dùng"
+                    aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                    id="inputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="inputCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                </div>
+                <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                    ký ngay</a>
+                </div>
+                <div class="form-text text-dark">
+                  <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-start" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ hàng
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex flex-grow-1 mb-3">
+            <input class="form-control me-2" type="search" placeholder="Nhập mã hoặc tên sản phẩm" aria-label="Search">
+            <button class="btn btn-secondary flex-grow-1" type="submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- FOR >MD DISPLAY -->
+      <div class="container-fluid d-none d-md-flex ms-3 me-3">
+        <a class="navbar-brand me-5" href="index.html"><strong>GGES Shop</strong></a>
+        <form class="d-flex flex-grow-1">
+          <input class="form-control me-2" type="search" placeholder="Nhập mã hoặc tên sản phẩm" aria-label="Search">
+          <button class="btn btn-secondary flex-grow-1" type="submit"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="navbar-collapse flex-grow-1" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex d-lg-none flex-row">
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link darker-when-hover" aria-current="page" href="#">
+                <i class="fa-solid fa-bell"></i>
+                Thông báo
+              </a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link text-light darker-when-hover" href="sanpham.html">
+                <i class="fa-solid fa-tags"></i>
+                Sản phẩm
+              </a>
+            </li>
+            <li class="nav-item dropdown flex-grow-1">
+              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                Đăng nhập
+              </a>
+              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                class="dropdown-menu dropdown-menu-end login-menu pos-absolute">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" id="inputEmail2" placeholder="Tên người dùng"
+                    aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                    id="inputPassword2">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="inputCheck2">
+                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                </div>
+                <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                    ký ngay</a>
+                </div>
+                <div class="form-text text-dark">
+                  <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link text-light darker-when-hover" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ hàng
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex w-100 ms-xl-2">
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link text-light darker-when-hover" aria-current="page" href="#">
+                <i class="fa-solid fa-bell"></i>
+                Thông báo
+              </a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link text-light darker-when-hover" href="sanpham.html">
+                <i class="fa-solid fa-tags"></i>
+                Sản phẩm
+              </a>
+            </li>
+            <li class="nav-item dropdown flex-grow-1">
+              <a class="nav-link dropdown-toggle text-light darker-when-hover" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                Đăng nhập
+              </a>
+              <form action="admin.html" name="login-form" onsubmit="return validateForm(this)" method="GET"
+                class="dropdown-menu dropdown-menu-end login-menu">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Tên người dùng"
+                    aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                    id="inputPassword3">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="inputRemember3">
+                  <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+                </div>
+                <input type="submit" value="Đăng nhập" class="btn btn-primary">
+                <div class="form-text mt-4 mb-2">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none;"> Đăng
+                    ký ngay</a>
+                </div>
+                <div class="form-text text-dark">
+                  <a href="#" style="text-decoration: none;">Bạn quên mật khẩu?</a>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link text-light darker-when-hover" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ hàng
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container product-container">
+    <div class="row w-100 mx-0">
+      <div class="col text-center my-4">
+        <!-- <h1 class="fs-2">Trending</h1> -->
+      </div>
+    </div>
+    <div class="row w-100 mx-0">
+      <div class="col-12 col-md-3">
+        <!-- <div class="row d-flex justify-content-center flex-column" id="form-ui">
+            <h1 class="product-filter-title">Danh mục sản phẩm</h1>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
+              CPU</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
+              Mainboard</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAM" />
+              RAM</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
+              VGA</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
+              Bàn Phím</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
+              Chuột</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
+              Tai Nghe</label>
+            <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
+              Vỏ (Case)</label>
+          </div> -->
+        <div class="dropdown w-100">
+          <button class="btn dropdown-toggle product-filter-btn" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="true">
+            Danh mục sản phẩm
+          </button>
+          <ul class="dropdown-menu product-filter-dropdown " aria-labelledby="dropdownMenuButton1" id="form-ui">
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
+                CPU</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
+                Mainboard</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAM" />
+                RAM</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
+                VGA</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
+                Bàn Phím</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
+                Chuột</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
+                Tai Nghe</label></li>
+            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
+                Vỏ (Case)</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <!-- column divider -->
+        <div class="products pt-0">
+
+          <h1 class="lg-title">Sản Phẩm</h1>
+          <div class="product-items row">
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product CPU">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/cpu/intel-core-i5-7500.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">CPU</h2>
+                </div>
+                <p class="product-name">CPU Intel Core I5-7500 (3.4GHz - 3.8GHz)</p>
+                <p class="product-price">4.490.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product CPU">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/cpu/intel-core-i5-8600k.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">CPU</h2>
+                </div>
+                <p class="product-name">CPU Intel Core I5-8600K (3.6GHz)</p>
+                <p class="product-price">6.669.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product CPU">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/cpu/intel-core-i9-11900.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">CPU</h2>
+                </div>
+                <p class="product-name">CPU INTEL Core i9-11900 (8C/16T, 2.50 GHz - 5.20 GHz, 16MB) - 1200</p>
+                <p class="product-price">13.390.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mainboard/msi-z390a-pro.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Mainboard</h2>
+                </div>
+                <p class="product-name">Mainboard MSI Z390-A Pro</p>
+                <p class="product-price">3.299.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mainboard/msi-meg-z490.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Mainboard</h2>
+                </div>
+                <p class="product-name">Mainboard MSI MEG Z490 GODLIKE</p>
+                <p class="product-price">20.599.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mainboard/msi-z590a-pro.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Mainboard</h2>
+                </div>
+                <p class="product-name">Mainboard MSI Z590-A PRO</p>
+                <p class="product-price">4.900.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product RAM">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/ram/corsair-rgb-pro-3200.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">RAM</h2>
+                </div>
+                <p class="product-name">RAM Corsair Vengeance RGB Pro 16GB DDR4 3200MHz</p>
+                <p class="product-price">2.290.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product RAM">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/ram/corsair-lpx.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">RAM</h2>
+                </div>
+                <p class="product-name">RAM Corsair Vengeance LPX 8GB DDR4 3000MHz</p>
+                <p class="product-price">1.109.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product RAM">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/ram/kingston-fury.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">RAM</h2>
+                </div>
+                <p class="product-name">RAM KINGSTON Fury Black 8GB DDR4 2666MHz</p>
+                <p class="product-price">1.350.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product VGA">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/vga/gtx-1660ti.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">VGA</h2>
+                </div>
+                <p class="product-name">GIGABYTE GeForce GTX 1660Ti 6GB GDDR6 OC</p>
+                <p class="product-price">9.209.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product VGA">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/vga/rtx-3060ti.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">VGA</h2>
+                </div>
+                <p class="product-name">GIGABYTE GeForce RTX 3060 Ti VISION OC 8G 8GB GDDR6</p>
+                <p class="product-price">18.629.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product VGA">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/vga/rx-6700xt.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">VGA</h2>
+                </div>
+                <p class="product-name">ASUS TUF Gaming Radeon™ RX 6700 XT OC Edition 12GB GDDR6</p>
+                <p class="product-price">24.109.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Case">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/case/golden-field-h3b.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Vỏ (Case)</h2>
+                </div>
+                <p class="product-name">Case Máy tính Golden Field H3B - Mid Tower (Đen)</p>
+                <p class="product-price">550.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Case">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/case/sama-shadow.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Vỏ (Case)</h2>
+                </div>
+                <p class="product-name">Case Máy tính Sama Shadow</p>
+                <p class="product-price">990.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Case">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/case/xigmatek-aquarius.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Vỏ (Case)</h2>
+                </div>
+                <p class="product-name">Case Máy tính Xigmatek AQUARIUS S QUEEN (No Fan) Hồng</p>
+                <p class="product-price">1.799.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/keyboard/corsair-k63.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Bàn Phím</h2>
+                </div>
+                <p class="product-name">Bàn phím cơ CORSAIR K63 (TKL/Cherry MX Red/Đỏ)</p>
+                <p class="product-price">1.990.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/keyboard/strix-flare.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Bàn Phím</h2>
+                </div>
+                <p class="product-name">Bàn phím cơ ASUS Strix Flare (Fullsize/Cherry MX Red)</p>
+                <p class="product-price">3.990.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/keyboard/strix-flare.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Bàn Phím</h2>
+                </div>
+                <p class="product-name">Bàn phím Logitech Gaming G213 (Đen)</p>
+                <p class="product-price">3.990.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mouse/logitech-g502.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Chuột</h2>
+                </div>
+                <p class="product-name">Chuột gaming Logitech G502 HERO (Đen)</p>
+                <p class="product-price">1.049.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mouse/dareu-em908.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Chuột</h2>
+                </div>
+                <p class="product-name">Chuột máy tính DARE-U EM908</p>
+                <p class="product-price">299.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/mouse/dareu-lm130.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Chuột</h2>
+                </div>
+                <p class="product-name">Chuột máy tính Dareu LM130 (Đen)</p>
+                <p class="product-price">149.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/earphones/logitech-g331.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Tai Nghe</h2>
+                </div>
+                <p class="product-name">Tai nghe Over-ear Logitech G331 Wired Gaming (Đen)</p>
+                <p class="product-price">1.549.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/earphones/logitech-g733.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Tai Nghe</h2>
+                </div>
+                <p class="product-name">Tai nghe không dây gaming Logitech G733 Lightspeed RGB (Trắng)</p>
+                <p class="product-price">2.989.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+            <!-- divider -->
+            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+              <div class="product-content">
+                <div class="product-img">
+                  <img src="assets/images/product-images/earphones/dareu-eh416.webp" alt="product image">
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-buy"> mua ngay
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="sm-title">Tai Nghe</h2>
+                </div>
+                <p class="product-name">Tai nghe DareU EH416 RGB (Đen)</p>
+                <p class="product-price">349.000 vnđ</p>
+              </div>
+            </div>
+            <!-- divider -->
+          </div>
+
+        </div>
+        <!-- column divider -->
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+
+
+</body>
+
+</html>
