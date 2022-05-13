@@ -123,7 +123,6 @@ var itemList={
 
 
 const placeOrdBtns = document.querySelectorAll('.product .product-btns .btn-buy');
-console.log(placeOrdBtns);
 placeOrdBtns.forEach((placeOrdBtn, index) => {
     let listKey = (index < 9) ? `sp00${index + 1}` : `sp0${index + 1}`;
     placeOrdBtn.onclick = () => {
