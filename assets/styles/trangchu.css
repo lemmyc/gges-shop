@@ -178,7 +178,7 @@ body{
 }
 .slick-dots li button::before {
     /* color: #00B8FC!important; */
-    font-size: 30px!important;
+    font-size: 10px!important;
 }
 /* .slick-dots li.slick-active button:before {
     color: #00B8FC;
