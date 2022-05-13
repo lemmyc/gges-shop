@@ -206,14 +206,14 @@
       </div>
     </nav>
   </header>
-  <div class="container product-container">
+  <div class="container-fluid product-container">
     <div class="row w-100 mx-0">
       <div class="col text-center my-4">
         <!-- <h1 class="fs-2">Trending</h1> -->
       </div>
     </div>
     <div class="row w-100 mx-0">
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-xl-3">
         <!-- <div class="row d-flex justify-content-center flex-column" id="form-ui">
             <h1 class="product-filter-title">Danh mục sản phẩm</h1>
             <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
@@ -233,39 +233,38 @@
             <label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
               Vỏ (Case)</label>
           </div> -->
-        <div class="dropdown w-100">
-          <button class="btn dropdown-toggle product-filter-btn" type="button" id="dropdownMenuButton1"
-            data-bs-toggle="dropdown" aria-expanded="true">
+        <div class="dropdown w-100 mb-3 d-xl-flex justify-content-center flex-column">
+          <button class="btn dropdown-toggle product-filter-btn" type="button" id="filterBtn"
+            data-bs-toggle="" aria-expanded="true">
             Danh mục sản phẩm
           </button>
-          <ul class="dropdown-menu product-filter-dropdown " aria-labelledby="dropdownMenuButton1" id="form-ui">
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
+          <ul class="product-filter-dropdown border-0 mt-1 row"  id="form-ui">
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".CPU" />
                 CPU</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mainboard" />
                 Mainboard</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAM" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".RAM" />
                 RAM</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".VGA" />
                 VGA</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Keyboard" />
                 Bàn Phím</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Mouse" />
                 Chuột</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Earphone" />
                 Tai Nghe</label></li>
-            <li><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
+            <li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-6 ps-1"><label class="product-filter-check"><input class="product-filter-box" type="checkbox" value=".Case" />
                 Vỏ (Case)</label></li>
           </ul>
         </div>
       </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-xl-9">
         <!-- column divider -->
-        <div class="products pt-0">
-
+        <div class="products p-0 p-3">
           <h1 class="lg-title">Sản Phẩm</h1>
           <div class="product-items row">
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product CPU">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product CPU">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/cpu/intel-core-i5-7500.webp" alt="product image">
@@ -287,7 +286,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product CPU">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product CPU">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/cpu/intel-core-i5-8600k.webp" alt="product image">
@@ -309,7 +308,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product CPU">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product CPU">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/cpu/intel-core-i9-11900.webp" alt="product image">
@@ -331,7 +330,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mainboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mainboard/msi-z390a-pro.webp" alt="product image">
@@ -353,7 +352,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mainboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mainboard/msi-meg-z490.webp" alt="product image">
@@ -375,7 +374,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mainboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mainboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mainboard/msi-z590a-pro.webp" alt="product image">
@@ -397,7 +396,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product RAM">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product RAM">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/ram/corsair-rgb-pro-3200.webp" alt="product image">
@@ -418,7 +417,7 @@
               </div>
             </div>
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product RAM">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product RAM">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/ram/corsair-lpx.webp" alt="product image">
@@ -440,7 +439,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product RAM">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product RAM">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/ram/kingston-fury.webp" alt="product image">
@@ -462,7 +461,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product VGA">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product VGA">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/vga/gtx-1660ti.webp" alt="product image">
@@ -484,7 +483,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product VGA">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product VGA">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/vga/rtx-3060ti.webp" alt="product image">
@@ -506,7 +505,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product VGA">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product VGA">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/vga/rx-6700xt.webp" alt="product image">
@@ -528,7 +527,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Case">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Case">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/case/golden-field-h3b.webp" alt="product image">
@@ -550,7 +549,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Case">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Case">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/case/sama-shadow.webp" alt="product image">
@@ -572,7 +571,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Case">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Case">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/case/xigmatek-aquarius.webp" alt="product image">
@@ -594,7 +593,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Keyboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/keyboard/corsair-k63.webp" alt="product image">
@@ -616,7 +615,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Keyboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/keyboard/strix-flare.webp" alt="product image">
@@ -638,7 +637,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Keyboard">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Keyboard">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/keyboard/strix-flare.webp" alt="product image">
@@ -660,7 +659,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mouse">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mouse/logitech-g502.webp" alt="product image">
@@ -682,7 +681,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mouse">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mouse/dareu-em908.webp" alt="product image">
@@ -704,7 +703,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Mouse">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Mouse">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/mouse/dareu-lm130.webp" alt="product image">
@@ -726,7 +725,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Earphone">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/earphones/logitech-g331.webp" alt="product image">
@@ -748,7 +747,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Earphone">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/earphones/logitech-g733.webp" alt="product image">
@@ -770,7 +769,7 @@
             </div>
             <!-- divider -->
             <!-- divider -->
-            <div class="col-12 col-md-6 col-lg-4 product Earphone">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 product Earphone">
               <div class="product-content">
                 <div class="product-img">
                   <img src="assets/images/product-images/earphones/dareu-eh416.webp" alt="product image">
