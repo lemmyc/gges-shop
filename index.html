@@ -39,13 +39,76 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-light"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-light text-start" aria-current="page" href="#">
+            <li class="nav-item flex-grow-1 dropdown noti">
+              <a class="nav-link text-light darker-when-hover dropdown-toggle noti-btn text-start" href="#" id="notiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <header class="noti-header">
+                  <h3 class="noti-header-content">Thông báo mới nhất</h3>
+                </header>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/cpu/intel-core-i9-11900.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SEA GAMES CUỒNG NHIỆT - GIẢM GIÁ KỊCH LIỆT</span>
+                        <P>Intel Core I9 11900 giảm giá sốc đến 30%!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/keyboard/corsair-k63.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SIÊU HÈ NÓNG BỎNG - SALES CỰC BỐC</span>
+                        <P>Tặng ngay bàn phím Corsair K63 cho đơn hàng trên 5 triệu đồng!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/vga/rtx-3060ti.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>THI TƯNG BỪNG - NHẬN QUÀ KHÔNG NGỪNG</span>
+                        <P>Ưu đãi ngập tràn cho học sinh đạt kết quả cao kì thi THPT Quốc Gia!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-footer">
+                    Xem thêm
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light text-start" href="sanpham.html">
@@ -104,11 +167,74 @@
         </form>
         <div class="navbar-collapse flex-grow-1" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex d-lg-none flex-row">
-            <li class="nav-item flex-grow-1">
-              <a class="nav-link darker-when-hover" aria-current="page" href="#">
+            <li class="nav-item flex-grow-1 dropdown">
+              <a class="nav-link text-light darker-when-hover dropdown-toggle noti-btn" href="#" id="notiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
+
+              <ul class="dropdown-menu pos-absolute">
+                <header class="noti-header">
+                  <h3 class="noti-header-content">Thông báo mới nhất</h3>
+                </header>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/cpu/intel-core-i9-11900.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SEA GAMES CUỒNG NHIỆT - GIẢM GIÁ KỊCH LIỆT</span>
+                        <P>Intel Core I9 11900 giảm giá sốc đến 30%!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/keyboard/corsair-k63.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SIÊU HÈ NÓNG BỎNG - SALES CỰC BỐC</span>
+                        <P>Tặng ngay bàn phím Corsair K63 cho đơn hàng trên 5 triệu đồng!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/vga/rtx-3060ti.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>THI TƯNG BỪNG - NHẬN QUÀ KHÔNG NGỪNG</span>
+                        <P>Ưu đãi ngập tràn cho học sinh đạt kết quả cao kì thi THPT Quốc Gia!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-footer">
+                    Xem thêm
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item flex-grow-1">
               <a class="nav-link text-light darker-when-hover" href="sanpham.html">
@@ -153,11 +279,74 @@
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex w-100 ms-xl-2">
-            <li class="nav-item flex-grow-1">
-              <a class="nav-link text-light darker-when-hover" aria-current="page" href="#">
+            <li class="nav-item flex-grow-1 dropdown">
+              <a class="nav-link text-light darker-when-hover dropdown-toggle noti-btn" href="#" id="notiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
                 Thông báo
               </a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <header class="noti-header">
+                  <h3 class="noti-header-content">Thông báo mới nhất</h3>
+                </header>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/cpu/intel-core-i9-11900.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SEA GAMES CUỒNG NHIỆT - GIẢM GIÁ KỊCH LIỆT</span>
+                        <P>Intel Core I9 11900 giảm giá sốc đến 30%!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/keyboard/corsair-k63.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>SIÊU HÈ NÓNG BỎNG - SALES CỰC BỐC</span>
+                        <P>Tặng ngay bàn phím Corsair K63 cho đơn hàng trên 5 triệu đồng!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-content">
+                    <div class="row">
+                      <div class="col-1 noti-content-banner">
+                        <img src="./assets/images/product-images/vga/rtx-3060ti.webp" class="noti-content-img" alt="" srcset="">
+                      </div>
+                      <div class="col-11 noti-content-content">
+                        <span>THI TƯNG BỪNG - NHẬN QUÀ KHÔNG NGỪNG</span>
+                        <P>Ưu đãi ngập tràn cho học sinh đạt kết quả cao kì thi THPT Quốc Gia!</P>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider noti-divider">
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-item noti-footer">
+                    Xem thêm
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item flex-grow-1">
               <a class="nav-link text-light darker-when-hover" href="sanpham.html">
@@ -380,7 +569,7 @@
 
     </div>
 
-    <div class="customer-feedback mt-5 container-fluid overflow-hidden">
+    <div class="customer-feedback mt-5 overflow-hidden">
       <div id="carouselExampleDark" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
