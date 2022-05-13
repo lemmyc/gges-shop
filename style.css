@@ -119,6 +119,13 @@
         font-size: 60px;
         margin-left: 15px;
     }
+
+    .carousel-items .slick-next {
+        right: -10px;
+    }
+    .carousel-items .slick-prev {
+        left: -10px;
+    }
 }
 
 
