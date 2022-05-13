@@ -14,7 +14,9 @@
 body{
     font-family: 'Quicksand', sans-serif;
 }
-
+.pos-absolute{
+    position: absolute!important;
+}
 .darker-when-hover:hover{
     opacity: .75;
 }
