@@ -68,7 +68,7 @@ function loginFormValidate(form){
         window.localStorage.setItem("rememberUser", rememberUser);
         window.localStorage.setItem("isLogged", true);
         let currentPage = (window.location.href).split("/").pop();
-        if (currentPage == "dangky.html") currentPage = "index.html"
+        if (currentPage == "dangky.html" || currentPage == "") currentPage = "index.html"
         window.open(currentPage, "_self")
     }
 }

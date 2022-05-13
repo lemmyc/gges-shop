@@ -5,6 +5,7 @@ $(document).ready(()=>{
             e.preventDefault();
             window.localStorage.setItem("isLogged", false);
             let currentPage = (window.location.href).split("/").pop();
+            if (currentPage == "") currentPage = "index.html"
             window.open(currentPage, "_self")
         }
     }
