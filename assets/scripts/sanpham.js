@@ -21,3 +21,7 @@ var $container = $('.product-items').isotope({
   
     $container.isotope({ filter: filterValue })
   });
+$("#form-ui").show();
+$("#filterBtn").on("click", ()=>{
+  $("#form-ui").toggle();
+})
