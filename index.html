@@ -539,7 +539,9 @@
             </strong>
           </div>
           <div class="grid-item purchase-btn">
-            <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
+            <button type="button" class="btn btn-primary" onclick="redirect();" style="color: #000">
+              Mua Ngay
+            </button>
           </div>
         </div>
       </div>
@@ -554,7 +556,7 @@
             <div class="details-wrapper">
               <h1 style="margin-bottom:0">CẢM NHẬN CHIẾN THẮNG</h1>
               <p>Trải nghiệm Gaming được tối ưu hóa bởi các chuyên gia e-sport hàng đầu thế giới</p>
-              <button type="button" class="btn btn-primary" style="color: #000">Mua Ngay</button>
+              <button type="button" class="btn btn-primary" onclick="redirect();" style="color: #000">Mua Ngay</button>
               
             </div>
           </div>
@@ -807,6 +809,11 @@
   
   <script src="./assets/scripts/login.js"></script>
   <script src="./assets/scripts/logout.js"></script>
+  <script>
+    function redirect() {
+      window.open('./sanpham.html', '_self');
+    }
+  </script>
 </body>
 
 </html>
