@@ -120,6 +120,71 @@
         margin-left: 15px;
     }
 
+    .noti-header{
+        /* font-size: 30px;
+        font-weight: bold; */
+        border-bottom: 3px solid lightgray;
+        width: 100%;
+    }
+
+    .noti-header-content{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5px;
+        color: gray;
+    }
+
+    .noti-content-img{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+
+    .noti-content-banner{
+        text-align: center;
+    }
+
+    .noti-content{
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .noti-content-content{
+        margin-top: 5px;
+        /* line-break: auto; */
+    }
+
+    .noti-content-content span{
+        /* line-break: auto; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .noti-content-content p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        font-size: 10px;
+    }
+
+    .noti-footer{
+        color: orange;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .noti{
+        max-width: 100%;
+    }
+    
     .carousel-items .slick-next {
         right: -10px;
     }
@@ -127,8 +192,6 @@
         left: -10px;
     }
 }
-
-
 
 /* 768
 600
@@ -251,6 +314,66 @@
     .slick-next{
         transform: translateX(-1rem)!important;
     }
+
+    .noti-header{
+        /* font-size: 30px;
+        font-weight: bold; */
+        border-bottom: 3px solid lightgray;
+        width: 500px;
+    }
+
+    .noti-header-content{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+        color: gray;
+    }
+
+    .noti-content-img{
+        width: 40px;
+        height: 40px;
+        margin-top: 17px;
+        margin-left: -5px;
+    }
+
+    .noti-content-banner{
+        text-align: center;
+    }
+
+    .noti-content{
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .noti-content-content{
+        margin-top: 10px;
+        /* line-break: auto; */
+    }
+
+    .noti-content-content span{
+        /* line-break: auto; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .noti-content-content p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .noti-footer{
+        color: orange;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 /* Man hinh lon 996->1500 */
@@ -344,6 +467,66 @@
     #register-form{
         width: 50%!important;
     }
+    
+    .noti-header{
+        /* font-size: 30px;
+        font-weight: bold; */
+        border-bottom: 3px solid lightgray;
+        width: 500px;
+    }
+
+    .noti-header-content{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+        color: gray;
+    }
+
+    .noti-content-img{
+        width: 40px;
+        height: 40px;
+        margin-top: 17px;
+        margin-left: -5px;
+    }
+
+    .noti-content-banner{
+        text-align: center;
+    }
+
+    .noti-content{
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .noti-content-content{
+        margin-top: 10px;
+        /* line-break: auto; */
+    }
+
+    .noti-content-content span{
+        /* line-break: auto; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .noti-content-content p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .noti-footer{
+        color: orange;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 /* Man hinh cuc lon >=1500px */
@@ -436,5 +619,65 @@
     }
     #register-form{
         width: 50%!important;
+    }
+    
+    .noti-header{
+        /* font-size: 30px;
+        font-weight: bold; */
+        border-bottom: 4px solid lightgray;
+        width: 100%px;
+    }
+
+    .noti-header-content{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+        color: gray;
+    }
+
+    .noti-content-img{
+        width: 40px;
+        height: 40px;
+        margin-top: 17px;
+        margin-left: -5px;
+    }
+
+    .noti-content-banner{
+        text-align: center;
+    }
+
+    .noti-content{
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .noti-content-content{
+        margin-top: 10px;
+        /* line-break: auto; */
+    }
+
+    .noti-content-content span{
+        /* line-break: auto; */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .noti-content-content p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .noti-footer{
+        color: orange;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
     }
 }
