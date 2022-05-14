@@ -350,7 +350,10 @@ footer {
     color: rgb(245,0,0);
 }
 
-
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 @media only screen and (max-width: 320px){
     .promotion-container-1{
