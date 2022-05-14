@@ -142,7 +142,7 @@ for(var key in localDt){
                 <td class="d-prod-name">${name}</td>
                 <td class="d-prod-quant text-center">
                     <input class="form-control quantity flex-grow-0 p-0 text-center" min="1"
-                        name="quantity" data-code=${key} value="${orderCount}" oninput="handleInputQuant(this)"  
+                        name="quantity" data-code=${key} data-index=${index} value="${orderCount}" oninput="handleInputQuant(this)"  
                         type="number"
                         style="max-width:75%; margin: 0 auto;"
                     >
@@ -257,7 +257,9 @@ function toggleTable(){
 }
 function handleInputQuant(e){
     let productCode = e.dataset.code;
+    let productIndex = e.dataset.index;
     let inputValue = e.value;
+    
     window.localStorage.setItem(productCode, inputValue);
     let newPrice = e.value * itemList[productCode].price
     let newPriceInVND = convToVND(newPrice);
@@ -268,6 +270,32 @@ function handleInputQuant(e){
     totalPreTax += priceDiff;
     ordTableFooter.innerHTML = ``;
     ordTableFooter.innerHTML = getOrdFooter();
+
+    //xu ly trong mang HTML
+    let currentItem = itemList[productCode];
+    
+    let tempHtml = `
+        <tr>
+            <td class="d-prod-img"><img src="${currentItem.photo}" alt=""></td>
+            <td class="d-prod-name">${currentItem.name}</td>
+            <td class="d-prod-quant text-center">
+                <input class="form-control quantity flex-grow-0 p-0 text-center" min="1"
+                    name="quantity" data-code=${productCode} data-index=${productIndex} value="${inputValue}" oninput="handleInputQuant(this)"  
+                    type="number"
+                    style="max-width:75%; margin: 0 auto;"
+                >
+            </td>
+            <td class="d-prod-price">${convToVND(currentItem.price)}</td> 
+            <td class="d-prod-total">${newPriceInVND}</td>
+            <td class="d-prod-del">
+            
+                <button class="d-prod-del-btn p-1" data-code=${productCode} onclick="handleRemove('${productIndex}', '${productCode}')">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </td>
+        </tr>
+    `
+    html[productIndex] = tempHtml;
 
 }
 window.onstorage = ()=>{
